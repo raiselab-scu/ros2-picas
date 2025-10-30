@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtrace_picas.a  CMakeFiles/trace_picas.dir/src/trace_function.cpp.o
+/usr/bin/ranlib libtrace_picas.a

@@ -1,0 +1,4 @@
+source;share/picas_example_mt/local_setup.bash
+source;share/picas_example_mt/local_setup.dsv
+source;share/picas_example_mt/local_setup.sh
+source;share/picas_example_mt/local_setup.zsh

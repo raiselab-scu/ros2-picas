@@ -1,0 +1,8 @@
+source;share/picas_example_mt/hook/cmake_prefix_path.ps1
+source;share/picas_example_mt/hook/cmake_prefix_path.dsv
+source;share/picas_example_mt/hook/cmake_prefix_path.sh
+source;share/picas_example_mt/local_setup.bash
+source;share/picas_example_mt/local_setup.dsv
+source;share/picas_example_mt/local_setup.ps1
+source;share/picas_example_mt/local_setup.sh
+source;share/picas_example_mt/local_setup.zsh

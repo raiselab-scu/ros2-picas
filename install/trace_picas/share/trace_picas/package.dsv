@@ -1,0 +1,8 @@
+source;share/trace_picas/hook/cmake_prefix_path.ps1
+source;share/trace_picas/hook/cmake_prefix_path.dsv
+source;share/trace_picas/hook/cmake_prefix_path.sh
+source;share/trace_picas/local_setup.bash
+source;share/trace_picas/local_setup.dsv
+source;share/trace_picas/local_setup.ps1
+source;share/trace_picas/local_setup.sh
+source;share/trace_picas/local_setup.zsh

@@ -1,0 +1,209 @@
+[0.025s] Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs -DPICAS=TRUE -DCMAKE_INSTALL_PREFIX=/home/yfu/projects/ros2-picas/install/test_msgs
+[0.247s] -- The C compiler identification is GNU 9.4.0
+[0.434s] -- The CXX compiler identification is GNU 9.4.0
+[0.443s] -- Check for working C compiler: /usr/bin/cc
+[0.679s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.681s] -- Detecting C compiler ABI info
+[0.933s] -- Detecting C compiler ABI info - done
+[0.965s] -- Detecting C compile features
+[0.965s] -- Detecting C compile features - done
+[0.971s] -- Check for working CXX compiler: /usr/bin/c++
+[1.224s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.227s] -- Detecting CXX compiler ABI info
+[1.490s] -- Detecting CXX compiler ABI info - done
+[1.516s] -- Detecting CXX compile features
+[1.518s] -- Detecting CXX compile features - done
+[1.525s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.575s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.575s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.747s] -- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)
+[1.787s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[1.796s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.830s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[1.878s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[1.950s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.225s] -- Found ament_cmake_cppcheck: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cppcheck/cmake)
+[2.228s] -- Found ament_cmake_cpplint: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cpplint/cmake)
+[2.231s] -- Found ament_cmake_uncrustify: 0.10.7 (/opt/ros/galactic/share/ament_cmake_uncrustify/cmake)
+[2.250s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[2.279s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[2.332s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.334s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[2.389s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.389s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.390s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.390s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[2.436s] -- Found PythonExtra: .so  
+[2.537s] -- Found ament_cmake_flake8: 0.10.7 (/opt/ros/galactic/share/ament_cmake_flake8/cmake)
+[2.540s] -- Found ament_cmake_pep257: 0.10.7 (/opt/ros/galactic/share/ament_cmake_pep257/cmake)
+[2.561s] -- Configuring done
+[2.613s] -- Generating done
+[2.618s] CMake Warning:
+[2.618s]   Manually-specified variables were not used by the project:
+[2.618s] 
+[2.618s]     PICAS
+[2.618s] 
+[2.619s] 
+[2.637s] -- Build files have been written to: /home/yfu/projects/ros2-picas/build/test_msgs
+[2.660s] Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs -DPICAS=TRUE -DCMAKE_INSTALL_PREFIX=/home/yfu/projects/ros2-picas/install/test_msgs
+[2.671s] Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+[2.771s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.771s] [35m[1mScanning dependencies of target test_msgs__cpp[0m
+[2.800s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.356s] [  6%] Built target test_msgs__cpp
+[3.380s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.380s] [35m[1mScanning dependencies of target test_msgs__rosidl_generator_c[0m
+[3.411s] [ 17%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.o[0m
+[3.411s] [ 17%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o[0m
+[3.519s] [ 20%] [32m[1mLinking C shared library libtest_msgs__rosidl_generator_c.so[0m
+[3.602s] [ 20%] Built target test_msgs__rosidl_generator_c
+[3.652s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.894s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_introspection_cpp[0m
+[4.073s] [ 31%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_msgs/msg/detail/test_string__type_support.cpp.o[0m
+[4.074s] [ 31%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_msgs/msg/detail/u_time__type_support.cpp.o[0m
+[4.241s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_introspection_c[0m
+[4.304s] [ 37%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c.o[0m
+[4.305s] [ 37%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.o[0m
+[4.408s] [ 41%] [32m[1mLinking C shared library libtest_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.485s] [ 41%] Built target test_msgs__rosidl_typesupport_introspection_c
+[4.538s] [ 44%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.872s] [ 48%] [32m[1mLinking CXX shared library libtest_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.037s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_c[0m
+[5.037s] [ 48%] Built target test_msgs__rosidl_typesupport_introspection_cpp
+[5.065s] [ 58%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.065s] [ 58%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_msgs/msg/u_time__type_support.cpp.o[0m
+[5.065s] [ 58%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_msgs/msg/test_string__type_support.cpp.o[0m
+[5.198s] [ 62%] [32m[1mLinking CXX shared library libtest_msgs__rosidl_typesupport_c.so[0m
+[5.285s] [ 62%] Built target test_msgs__rosidl_typesupport_c
+[5.519s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_cpp[0m
+[5.556s] [ 65%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/test_msgs/msg/u_time__type_support.cpp.o[0m
+[5.556s] [ 68%] [32mBuilding CXX object CMakeFiles/test_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/test_msgs/msg/test_string__type_support.cpp.o[0m
+[6.325s] [ 72%] [32m[1mLinking CXX shared library libtest_msgs__rosidl_typesupport_cpp.so[0m
+[6.418s] [ 72%] Built target test_msgs__rosidl_typesupport_cpp
+[6.451s] [35m[1mScanning dependencies of target test_msgs[0m
+[6.480s] [ 72%] Built target test_msgs
+[6.504s] [35m[1mScanning dependencies of target test_msgs__py[0m
+[6.528s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.972s] [ 75%] Built target test_msgs__py
+[7.997s] [35m[1mScanning dependencies of target test_msgs__python[0m
+[8.041s] [ 82%] [32mBuilding C object CMakeFiles/test_msgs__python.dir/rosidl_generator_py/test_msgs/msg/_u_time_s.c.o[0m
+[8.042s] [ 82%] [32mBuilding C object CMakeFiles/test_msgs__python.dir/rosidl_generator_py/test_msgs/msg/_test_string_s.c.o[0m
+[8.357s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/test_msgs/libtest_msgs__python.so[0m
+[8.455s] [ 86%] Built target test_msgs__python
+[8.481s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[8.481s] [35m[1mScanning dependencies of target test_msgs__rosidl_typesupport_c__pyext[0m
+[8.525s] [ 93%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.525s] [ 93%] [32mBuilding C object CMakeFiles/test_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.824s] [100%] [32m[1mLinking C shared library rosidl_generator_py/test_msgs/test_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[8.824s] [100%] [32m[1mLinking C shared library rosidl_generator_py/test_msgs/test_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[8.909s] [100%] Built target test_msgs__rosidl_typesupport_introspection_c__pyext
+[8.909s] [100%] Built target test_msgs__rosidl_typesupport_c__pyext
+[9.071s] Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+[9.110s] Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs
+[9.139s] -- Install configuration: ""
+[9.139s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/rosidl_interfaces/test_msgs
+[9.140s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs
+[9.140s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg
+[9.141s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/u_time.h
+[9.141s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.141s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail
+[9.142s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__functions.c
+[9.142s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__functions.h
+[9.142s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__functions.c
+[9.143s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.h
+[9.143s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__functions.h
+[9.143s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__struct.h
+[9.143s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.h
+[9.144s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__struct.h
+[9.144s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/test_string.h
+[9.144s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/library_path.sh
+[9.144s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/library_path.dsv
+[9.144s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_generator_c.so
+[9.145s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_generator_c.so" to ""
+[9.145s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs
+[9.145s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg
+[9.145s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.146s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail
+[9.146s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.c
+[9.146s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.c
+[9.146s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
+[9.147s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_c.h
+[9.147s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_c.so
+[9.147s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.148s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_c.so
+[9.148s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_c.so" to ""
+[9.148s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs
+[9.149s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg
+[9.149s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/u_time.hpp
+[9.149s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail
+[9.149s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__traits.hpp
+[9.150s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__struct.hpp
+[9.150s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__struct.hpp
+[9.150s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__builder.hpp
+[9.151s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__traits.hpp
+[9.151s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__builder.hpp
+[9.151s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/test_string.hpp
+[9.151s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs
+[9.152s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg
+[9.152s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail
+[9.152s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.cpp
+[9.153s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_cpp.hpp
+[9.153s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_cpp.hpp
+[9.153s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.cpp
+[9.153s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_cpp.so
+[9.154s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.154s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_cpp.so
+[9.154s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_cpp.so" to ""
+[9.154s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/pythonpath.sh
+[9.155s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/pythonpath.dsv
+[9.155s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/__init__.py
+[9.215s] Compiling '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/__init__.py'...
+[9.229s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg
+[9.229s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_test_string.py
+[9.230s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_test_string_s.c
+[9.230s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_u_time_s.c
+[9.230s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/__init__.py
+[9.230s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_u_time.py
+[9.231s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[9.232s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[9.232s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[9.233s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[9.233s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__python.so
+[9.234s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__python.so" to ""
+[9.234s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/TestString.idl
+[9.234s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/UTime.idl
+[9.235s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/TestString.msg
+[9.235s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/UTime.msg
+[9.235s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/package_run_dependencies/test_msgs
+[9.236s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/parent_prefix_path/test_msgs
+[9.236s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/ament_prefix_path.sh
+[9.236s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/ament_prefix_path.dsv
+[9.237s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/path.sh
+[9.237s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/path.dsv
+[9.237s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.bash
+[9.238s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.sh
+[9.238s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.zsh
+[9.238s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.dsv
+[9.239s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.dsv
+[9.239s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/packages/test_msgs
+[9.239s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cExport.cmake
+[9.240s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.240s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.240s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.241s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cExport.cmake
+[9.241s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.241s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cppExport.cmake
+[9.242s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.242s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.243s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cppExport.cmake
+[9.243s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.243s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/rosidl_cmake-extras.cmake
+[9.244s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.244s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.244s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.245s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.245s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.245s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgsConfig.cmake
+[9.245s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgsConfig-version.cmake
+[9.246s] -- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.xml
+[9.254s] Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs

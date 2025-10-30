@@ -1,0 +1,14 @@
+[0.047s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.191s] [ 75%] [32m[1mLinking CXX executable example[0m
+[0.192s] [ 75%] Built target case_study
+[2.824s] /usr/bin/ld: CMakeFiles/example.dir/src/example.cpp.o: in function `main':
+[2.824s] example.cpp:(.text+0xffc): undefined reference to `rclcpp::Scheduler::Process()'
+[2.824s] /usr/bin/ld: example.cpp:(.text+0x1030): undefined reference to `rclcpp::Scheduler::Process()'
+[2.825s] /usr/bin/ld: example.cpp:(.text+0x1064): undefined reference to `rclcpp::Scheduler::Process()'
+[2.825s] /usr/bin/ld: example.cpp:(.text+0x1098): undefined reference to `rclcpp::Scheduler::Process()'
+[2.825s] /usr/bin/ld: example.cpp:(.text+0x10cc): undefined reference to `rclcpp::Scheduler::Process()'
+[2.961s] collect2: error: ld returned 1 exit status
+[2.966s] make[2]: *** [CMakeFiles/example.dir/build.make:211: example] Error 1
+[2.966s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/example.dir/all] Error 2
+[2.967s] make: *** [Makefile:141: all] Error 2
+[2.975s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

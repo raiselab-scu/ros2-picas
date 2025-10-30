@@ -1,0 +1,8 @@
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:173:13:[m[K [01;31m[Kerror: [m[K‘[01m[KScheduler[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+  173 |     rclcpp::[01;31m[KScheduler[m[K scheduler;
+      |             [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:63: CMakeFiles/example.dir/src/example.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/example.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

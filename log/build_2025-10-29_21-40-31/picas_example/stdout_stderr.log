@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[ 75%] Built target case_study
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:229:78:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  229 |     exec1.set_callback_priority(c1_r_cb_1->subscription_, scheduler.Process()[01;31m[K)[m[K;
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:230:78:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  230 |     exec1.set_callback_priority(c1_r_cb_2->subscription_, scheduler.Process()[01;31m[K)[m[K;
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:231:78:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  231 |     exec1.set_callback_priority(c1_r_cb_3->subscription_, scheduler.Process()[01;31m[K)[m[K;
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:232:78:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  232 |     exec1.set_callback_priority(c1_r_cb_4->subscription_, scheduler.Process()[01;31m[K)[m[K;
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:233:78:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  233 |     exec1.set_callback_priority(c1_r_cb_5->subscription_, scheduler.Process()[01;31m[K)[m[K;
+      |                                                                              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:63: CMakeFiles/example.dir/src/example.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

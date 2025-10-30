@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target rclcpp[0m
+[  1%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o[0m
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:8:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’
+    8 | [01;31m[KScheduler[m[K::Scheduler() {
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:17:5:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’ previously defined here
+   17 |     [01;36m[KScheduler[m[K() {}
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:[m[K In member function ‘[01m[Kint rclcpp::Scheduler::Process()[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:20:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kversion[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   20 |     int [01;35m[Kversion[m[K = GetVersion(slack_time, 55); // 暂时假设任务需要55ms完成
+      |         [01;35m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

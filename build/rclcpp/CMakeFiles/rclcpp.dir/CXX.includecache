@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp
+
+/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp
+rclcpp/scheduler.hpp
+/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/rclcpp/scheduler.hpp
+random
+-
+cmath
+-
+

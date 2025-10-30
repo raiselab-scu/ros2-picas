@@ -1,0 +1,18 @@
+[0.029s] Invoking command in '/home/yfu/projects/ros2-picas/build/rclcpp': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6
+[0.184s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.404s] [  1%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o[0m
+[1.056s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:8:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’
+[1.057s]     8 | [01;31m[KScheduler[m[K::Scheduler() {
+[1.057s]       | [01;31m[K^~~~~~~~~[m[K
+[1.057s] In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[1.057s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:17:5:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’ previously defined here
+[1.057s]    17 |     [01;36m[KScheduler[m[K() {}
+[1.058s]       |     [01;36m[K^~~~~~~~~[m[K
+[1.058s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:[m[K In member function ‘[01m[Kint rclcpp::Scheduler::Process()[m[K’:
+[1.058s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:20:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kversion[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.058s]    20 |     int [01;35m[Kversion[m[K = GetVersion(slack_time, 55); // 暂时假设任务需要55ms完成
+[1.058s]       |         [01;35m[K^~~~~~~[m[K
+[1.362s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+[1.363s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+[1.363s] make: *** [Makefile:141: all] Error 2
+[1.370s] Invoked command in '/home/yfu/projects/ros2-picas/build/rclcpp' returned '2': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6

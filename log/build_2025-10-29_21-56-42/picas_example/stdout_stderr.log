@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target example[0m
+[ 50%] Built target case_study
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+/usr/bin/ld: CMakeFiles/example.dir/src/example.cpp.o: in function `main':
+example.cpp:(.text+0xffc): undefined reference to `rclcpp::Scheduler::Process()'
+/usr/bin/ld: example.cpp:(.text+0x1030): undefined reference to `rclcpp::Scheduler::Process()'
+/usr/bin/ld: example.cpp:(.text+0x1064): undefined reference to `rclcpp::Scheduler::Process()'
+/usr/bin/ld: example.cpp:(.text+0x1098): undefined reference to `rclcpp::Scheduler::Process()'
+/usr/bin/ld: example.cpp:(.text+0x10cc): undefined reference to `rclcpp::Scheduler::Process()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/example.dir/build.make:211: example] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,445 @@
+[0.388s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--allow-overriding', 'rclcpp', '--cmake-args', '-DPICAS=TRUE']
+[0.388s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=['rclcpp'], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DPICAS=TRUE'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff88c19580>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff88c19580>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff88b55af0>)
+[0.681s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.682s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yfu/projects/ros2-picas'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extensions ['ros']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(rclcpp) by extension 'ros'
+[0.721s] DEBUG:colcon.colcon_core.package_identification:Package 'rclcpp' with type 'ros.ament_cmake' and name 'rclcpp'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['ignore', 'ignore_ament_install']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'ignore'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'ignore_ament_install'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['colcon_pkg']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'colcon_pkg'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['colcon_meta']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'colcon_meta'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['ros']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'ros'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['cmake', 'python']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'cmake'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'python'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extensions ['python_setup_py']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example) by extension 'python_setup_py'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'ignore_ament_install'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'colcon_pkg'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['colcon_meta']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'colcon_meta'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['ros']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'ros'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['cmake', 'python']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'cmake'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'python'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extensions ['python_setup_py']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas-analysis) by extension 'python_setup_py'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example) by extension 'ros'
+[0.728s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-picas-example/picas_example' with type 'ros.ament_cmake' and name 'picas_example'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extensions ['ignore', 'ignore_ament_install']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extension 'ignore'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extension 'ignore_ament_install'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extension 'colcon_meta'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extensions ['ros']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/picas_example_mt) by extension 'ros'
+[0.730s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-picas-example/picas_example_mt' with type 'ros.ament_cmake' and name 'picas_example_mt'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extension 'ignore'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extension 'ignore_ament_install'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extensions ['colcon_pkg']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extension 'colcon_pkg'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extensions ['colcon_meta']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extension 'colcon_meta'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extensions ['ros']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/test_msgs) by extension 'ros'
+[0.732s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-picas-example/test_msgs' with type 'ros.ament_cmake' and name 'test_msgs'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extensions ['ignore', 'ignore_ament_install']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extension 'ignore'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extension 'ignore_ament_install'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extensions ['colcon_pkg']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extension 'colcon_pkg'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extensions ['colcon_meta']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extension 'colcon_meta'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extensions ['ros']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-picas-example/trace_picas) by extension 'ros'
+[0.735s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-picas-example/trace_picas' with type 'ros.ament_cmake' and name 'trace_picas'
+[0.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.777s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/yfu/projects/ros2-picas/install
+[0.779s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 173 installed packages in /opt/ros/galactic
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.905s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'test_msgs' is in: /home/yfu/projects/ros2-picas/install/test_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding test_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_args' from command line to '['-DPICAS=TRUE']'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_target' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'test_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.908s] DEBUG:colcon.colcon_core.verb:Building package 'test_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yfu/projects/ros2-picas/build/test_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPICAS=TRUE'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yfu/projects/ros2-picas/install/test_msgs', 'merge_install': False, 'path': '/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_args' from command line to '['-DPICAS=TRUE']'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_target' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'rclcpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.910s] DEBUG:colcon.colcon_core.verb:Building package 'rclcpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yfu/projects/ros2-picas/build/rclcpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPICAS=TRUE'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yfu/projects/ros2-picas/install/rclcpp', 'merge_install': False, 'path': '/home/yfu/projects/ros2-picas/rclcpp', 'symlink_install': False, 'test_result_base': None}
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_args' from command line to '['-DPICAS=TRUE']'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_target' from command line to 'None'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_clean_cache' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_clean_first' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'cmake_force_configure' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'ament_cmake_args' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'catkin_cmake_args' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trace_picas' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.911s] DEBUG:colcon.colcon_core.verb:Building package 'trace_picas' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yfu/projects/ros2-picas/build/trace_picas', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPICAS=TRUE'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yfu/projects/ros2-picas/install/trace_picas', 'merge_install': False, 'path': '/home/yfu/projects/ros2-picas/ros2-picas-example/trace_picas', 'symlink_install': False, 'test_result_base': None}
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_args' from command line to '['-DPICAS=TRUE']'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_target' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'picas_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.912s] DEBUG:colcon.colcon_core.verb:Building package 'picas_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yfu/projects/ros2-picas/build/picas_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPICAS=TRUE'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yfu/projects/ros2-picas/install/picas_example', 'merge_install': False, 'path': '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example', 'symlink_install': False, 'test_result_base': None}
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_args' from command line to '['-DPICAS=TRUE']'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_target' from command line to 'None'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_clean_first' from command line to 'False'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'cmake_force_configure' from command line to 'False'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'ament_cmake_args' from command line to 'None'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.913s] Level 5:colcon.colcon_core.verb:set package 'picas_example_mt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.913s] DEBUG:colcon.colcon_core.verb:Building package 'picas_example_mt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yfu/projects/ros2-picas/build/picas_example_mt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPICAS=TRUE'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yfu/projects/ros2-picas/install/picas_example_mt', 'merge_install': False, 'path': '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example_mt', 'symlink_install': False, 'test_result_base': None}
+[0.914s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.918s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.919s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs' with build type 'ament_cmake'
+[0.919s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs'
+[0.924s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.924s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.925s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+[1.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+[1.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs
+[1.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_msgs)
+[1.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs' for CMake module files
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs' for CMake config files
+[1.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'cmake_prefix_path')
+[1.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.ps1'
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.dsv'
+[1.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.sh'
+[1.672s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib'
+[1.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'ld_library_path_lib')
+[1.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.ps1'
+[1.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.dsv'
+[1.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.sh'
+[1.677s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/bin'
+[1.677s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib/pkgconfig/test_msgs.pc'
+[1.678s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages'
+[1.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'pythonpath')
+[1.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.ps1'
+[1.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.dsv'
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.sh'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/bin'
+[1.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.ps1'
+[1.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.dsv'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.sh'
+[1.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.bash'
+[1.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.zsh'
+[1.692s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/test_msgs/share/colcon-core/packages/test_msgs)
+[1.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_msgs)
+[1.695s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs' for CMake module files
+[1.696s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs' for CMake config files
+[1.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'cmake_prefix_path')
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.ps1'
+[1.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.dsv'
+[1.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/cmake_prefix_path.sh'
+[1.775s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib'
+[1.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'ld_library_path_lib')
+[1.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.ps1'
+[1.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.dsv'
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/ld_library_path_lib.sh'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/bin'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib/pkgconfig/test_msgs.pc'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages'
+[1.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_msgs', 'pythonpath')
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.dsv'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/hook/pythonpath.sh'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/test_msgs/bin'
+[1.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.ps1'
+[1.784s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.dsv'
+[1.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.sh'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.bash'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.zsh'
+[1.788s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/test_msgs/share/colcon-core/packages/test_msgs)
+[1.789s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yfu/projects/ros2-picas/rclcpp' with build type 'ament_cmake'
+[1.790s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yfu/projects/ros2-picas/rclcpp'
+[1.791s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.791s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/rclcpp': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6
+[6.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/rclcpp' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6
+[6.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/rclcpp': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/rclcpp
+[6.822s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp)
+[6.824s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp' for CMake module files
+[6.827s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp' for CMake config files
+[6.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'cmake_prefix_path')
+[6.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.ps1'
+[6.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.dsv'
+[6.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.sh'
+[6.835s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib'
+[6.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'ld_library_path_lib')
+[6.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.ps1'
+[6.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.dsv'
+[6.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.sh'
+[6.840s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/bin'
+[6.840s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib/pkgconfig/rclcpp.pc'
+[6.841s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib/python3.8/site-packages'
+[6.841s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/bin'
+[6.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.ps1'
+[6.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.dsv'
+[6.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.sh'
+[6.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.bash'
+[6.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.zsh'
+[6.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/rclcpp/share/colcon-core/packages/rclcpp)
+[6.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rclcpp)
+[6.852s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp' for CMake module files
+[6.855s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp' for CMake config files
+[6.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'cmake_prefix_path')
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.ps1'
+[6.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/rclcpp' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/rclcpp
+[6.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.dsv'
+[6.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/cmake_prefix_path.sh'
+[6.954s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib'
+[6.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('rclcpp', 'ld_library_path_lib')
+[6.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.ps1'
+[6.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.dsv'
+[6.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/hook/ld_library_path_lib.sh'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/bin'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib/pkgconfig/rclcpp.pc'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/lib/python3.8/site-packages'
+[6.959s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/rclcpp/bin'
+[6.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.ps1'
+[6.961s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.dsv'
+[6.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.sh'
+[6.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.bash'
+[6.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.zsh'
+[6.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/rclcpp/share/colcon-core/packages/rclcpp)
+[6.966s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yfu/projects/ros2-picas/ros2-picas-example/trace_picas' with build type 'ament_cmake'
+[6.967s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yfu/projects/ros2-picas/ros2-picas-example/trace_picas'
+[6.968s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.968s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/trace_picas': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/trace_picas -- -j6 -l6
+[8.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/trace_picas' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/trace_picas -- -j6 -l6
+[8.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/trace_picas': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/trace_picas
+[8.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trace_picas)
+[8.241s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas' for CMake module files
+[8.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/trace_picas' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/trace_picas
+[8.244s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas' for CMake config files
+[8.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('trace_picas', 'cmake_prefix_path')
+[8.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.ps1'
+[8.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.dsv'
+[8.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.sh'
+[8.252s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib'
+[8.253s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/bin'
+[8.253s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib/pkgconfig/trace_picas.pc'
+[8.254s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib/python3.8/site-packages'
+[8.255s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/bin'
+[8.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.ps1'
+[8.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.dsv'
+[8.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.sh'
+[8.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.bash'
+[8.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.zsh'
+[8.261s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/trace_picas/share/colcon-core/packages/trace_picas)
+[8.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trace_picas)
+[8.264s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas' for CMake module files
+[8.265s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas' for CMake config files
+[8.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('trace_picas', 'cmake_prefix_path')
+[8.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.ps1'
+[8.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.dsv'
+[8.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/hook/cmake_prefix_path.sh'
+[8.379s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib'
+[8.379s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/bin'
+[8.379s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib/pkgconfig/trace_picas.pc'
+[8.380s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/lib/python3.8/site-packages'
+[8.380s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/trace_picas/bin'
+[8.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.ps1'
+[8.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.dsv'
+[8.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.sh'
+[8.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.bash'
+[8.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.zsh'
+[8.386s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/trace_picas/share/colcon-core/packages/trace_picas)
+[8.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example' with build type 'ament_cmake'
+[8.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example'
+[8.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example_mt' with build type 'ament_cmake'
+[8.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example_mt'
+[8.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[8.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example_mt': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example_mt -- -j6 -l6
+[32.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example_mt' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example_mt -- -j6 -l6
+[32.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example_mt': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example_mt
+[32.700s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(picas_example_mt)
+[32.702s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt' for CMake module files
+[32.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example_mt' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example_mt
+[32.706s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt' for CMake config files
+[32.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('picas_example_mt', 'cmake_prefix_path')
+[32.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.ps1'
+[32.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.dsv'
+[32.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.sh'
+[32.716s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib'
+[32.717s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/bin'
+[32.717s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib/pkgconfig/picas_example_mt.pc'
+[32.718s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib/python3.8/site-packages'
+[32.719s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/bin'
+[32.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.ps1'
+[32.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.dsv'
+[32.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.sh'
+[32.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.bash'
+[32.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.zsh'
+[32.728s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/picas_example_mt/share/colcon-core/packages/picas_example_mt)
+[32.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(picas_example_mt)
+[32.731s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt' for CMake module files
+[32.733s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt' for CMake config files
+[32.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('picas_example_mt', 'cmake_prefix_path')
+[32.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.ps1'
+[32.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.dsv'
+[32.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/hook/cmake_prefix_path.sh'
+[32.817s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib'
+[32.817s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/bin'
+[32.817s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib/pkgconfig/picas_example_mt.pc'
+[32.818s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/lib/python3.8/site-packages'
+[32.818s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example_mt/bin'
+[32.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.ps1'
+[32.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.dsv'
+[32.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.sh'
+[32.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.bash'
+[32.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.zsh'
+[32.825s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/picas_example_mt/share/colcon-core/packages/picas_example_mt)
+[34.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[34.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example
+[34.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(picas_example)
+[34.137s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example' for CMake module files
+[34.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example
+[34.141s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example' for CMake config files
+[34.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('picas_example', 'cmake_prefix_path')
+[34.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.ps1'
+[34.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.dsv'
+[34.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.sh'
+[34.148s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib'
+[34.148s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/bin'
+[34.148s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib/pkgconfig/picas_example.pc'
+[34.149s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib/python3.8/site-packages'
+[34.150s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/bin'
+[34.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.ps1'
+[34.152s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv'
+[34.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.sh'
+[34.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.bash'
+[34.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.zsh'
+[34.155s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/picas_example/share/colcon-core/packages/picas_example)
+[34.158s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(picas_example)
+[34.159s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example' for CMake module files
+[34.160s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example' for CMake config files
+[34.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('picas_example', 'cmake_prefix_path')
+[34.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.ps1'
+[34.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.dsv'
+[34.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/hook/cmake_prefix_path.sh'
+[34.271s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib'
+[34.271s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/bin'
+[34.271s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib/pkgconfig/picas_example.pc'
+[34.272s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/lib/python3.8/site-packages'
+[34.272s] Level 1:colcon.colcon_core.environment:checking '/home/yfu/projects/ros2-picas/install/picas_example/bin'
+[34.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.ps1'
+[34.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv'
+[34.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.sh'
+[34.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.bash'
+[34.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.zsh'
+[34.278s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yfu/projects/ros2-picas/install/picas_example/share/colcon-core/packages/picas_example)
+[34.279s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.281s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.282s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[34.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[34.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[34.301s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[34.332s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[34.333s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[34.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yfu/projects/ros2-picas/install/local_setup.ps1'
+[34.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yfu/projects/ros2-picas/install/_local_setup_util_ps1.py'
+[34.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yfu/projects/ros2-picas/install/setup.ps1'
+[34.348s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yfu/projects/ros2-picas/install/local_setup.sh'
+[34.350s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yfu/projects/ros2-picas/install/_local_setup_util_sh.py'
+[34.352s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yfu/projects/ros2-picas/install/setup.sh'
+[34.354s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yfu/projects/ros2-picas/install/local_setup.bash'
+[34.356s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yfu/projects/ros2-picas/install/setup.bash'
+[34.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yfu/projects/ros2-picas/install/local_setup.zsh'
+[34.360s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yfu/projects/ros2-picas/install/setup.zsh'

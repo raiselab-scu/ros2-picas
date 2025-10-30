@@ -1,0 +1,676 @@
+[0.000000] (-) TimerEvent: {}
+[0.000676] (test_msgs) JobQueued: {'identifier': 'test_msgs', 'dependencies': OrderedDict()}
+[0.001038] (rclcpp) JobQueued: {'identifier': 'rclcpp', 'dependencies': OrderedDict([('test_msgs', '/home/yfu/projects/ros2-picas/install/test_msgs')])}
+[0.001282] (trace_picas) JobQueued: {'identifier': 'trace_picas', 'dependencies': OrderedDict([('test_msgs', '/home/yfu/projects/ros2-picas/install/test_msgs'), ('rclcpp', '/home/yfu/projects/ros2-picas/install/rclcpp')])}
+[0.001800] (picas_example) JobQueued: {'identifier': 'picas_example', 'dependencies': OrderedDict([('test_msgs', '/home/yfu/projects/ros2-picas/install/test_msgs'), ('rclcpp', '/home/yfu/projects/ros2-picas/install/rclcpp'), ('trace_picas', '/home/yfu/projects/ros2-picas/install/trace_picas')])}
+[0.002108] (picas_example_mt) JobQueued: {'identifier': 'picas_example_mt', 'dependencies': OrderedDict([('test_msgs', '/home/yfu/projects/ros2-picas/install/test_msgs'), ('rclcpp', '/home/yfu/projects/ros2-picas/install/rclcpp'), ('trace_picas', '/home/yfu/projects/ros2-picas/install/trace_picas')])}
+[0.002459] (test_msgs) JobStarted: {'identifier': 'test_msgs'}
+[0.023631] (test_msgs) JobProgress: {'identifier': 'test_msgs', 'progress': 'cmake'}
+[0.025381] (test_msgs) JobProgress: {'identifier': 'test_msgs', 'progress': 'build'}
+[0.027017] (test_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yfu/projects/ros2-picas/build/test_msgs', '--', '-j6', '-l6'], 'cwd': '/home/yfu/projects/ros2-picas/build/test_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/test_msgs'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.099264] (-) TimerEvent: {}
+[0.155672] (test_msgs) StdoutLine: {'line': b'[ 10%] Built target test_msgs__cpp\n'}
+[0.156881] (test_msgs) StdoutLine: {'line': b'[ 17%] Built target test_msgs__rosidl_generator_c\n'}
+[0.199535] (-) TimerEvent: {}
+[0.209976] (test_msgs) StdoutLine: {'line': b'[ 44%] Built target test_msgs__rosidl_typesupport_introspection_c\n'}
+[0.210666] (test_msgs) StdoutLine: {'line': b'[ 44%] Built target test_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.262993] (test_msgs) StdoutLine: {'line': b'[ 72%] Built target test_msgs__rosidl_typesupport_cpp\n'}
+[0.263770] (test_msgs) StdoutLine: {'line': b'[ 72%] Built target test_msgs__rosidl_typesupport_c\n'}
+[0.299802] (-) TimerEvent: {}
+[0.312059] (test_msgs) StdoutLine: {'line': b'[ 72%] Built target test_msgs\n'}
+[0.379244] (test_msgs) StdoutLine: {'line': b'[ 75%] Built target test_msgs__py\n'}
+[0.400082] (-) TimerEvent: {}
+[0.440798] (test_msgs) StdoutLine: {'line': b'[ 86%] Built target test_msgs__python\n'}
+[0.500360] (-) TimerEvent: {}
+[0.502824] (test_msgs) StdoutLine: {'line': b'[100%] Built target test_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.503463] (test_msgs) StdoutLine: {'line': b'[100%] Built target test_msgs__rosidl_typesupport_c__pyext\n'}
+[0.535991] (test_msgs) CommandEnded: {'returncode': 0}
+[0.538897] (test_msgs) JobProgress: {'identifier': 'test_msgs', 'progress': 'install'}
+[0.568663] (test_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yfu/projects/ros2-picas/build/test_msgs'], 'cwd': '/home/yfu/projects/ros2-picas/build/test_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/test_msgs'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.597885] (test_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.599274] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/rosidl_interfaces/test_msgs\n'}
+[0.599706] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs\n'}
+[0.600020] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg\n'}
+[0.600532] (-) TimerEvent: {}
+[0.601489] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/u_time.h\n'}
+[0.601907] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.602507] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail\n'}
+[0.602998] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__functions.c\n'}
+[0.603462] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__functions.h\n'}
+[0.603804] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__functions.c\n'}
+[0.604099] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.h\n'}
+[0.604365] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__functions.h\n'}
+[0.604683] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__struct.h\n'}
+[0.605120] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.h\n'}
+[0.605396] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__struct.h\n'}
+[0.605647] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/test_string.h\n'}
+[0.605892] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/library_path.sh\n'}
+[0.606136] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/library_path.dsv\n'}
+[0.606377] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_generator_c.so\n'}
+[0.606657] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs\n'}
+[0.606935] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg\n'}
+[0.607184] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.607435] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail\n'}
+[0.607679] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.c\n'}
+[0.607918] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.c\n'}
+[0.608205] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h\n'}
+[0.608463] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_c.h\n'}
+[0.608711] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.608958] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_c.so\n'}
+[0.609204] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs\n'}
+[0.609441] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg\n'}
+[0.609680] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/u_time.hpp\n'}
+[0.609918] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail\n'}
+[0.610156] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__traits.hpp\n'}
+[0.610471] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__struct.hpp\n'}
+[0.610777] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__struct.hpp\n'}
+[0.611011] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__builder.hpp\n'}
+[0.611233] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__traits.hpp\n'}
+[0.611448] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__builder.hpp\n'}
+[0.611704] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/test_string.hpp\n'}
+[0.611931] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs\n'}
+[0.612160] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg\n'}
+[0.612384] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail\n'}
+[0.612608] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__type_support.cpp\n'}
+[0.612831] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613046] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613261] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/include/test_msgs/msg/detail/u_time__type_support.cpp\n'}
+[0.613473] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.613687] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__rosidl_typesupport_cpp.so\n'}
+[0.613900] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/pythonpath.sh\n'}
+[0.614112] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/pythonpath.dsv\n'}
+[0.614323] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/__init__.py\n'}
+[0.674398] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg\n'}
+[0.674920] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_test_string.py\n'}
+[0.675251] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_test_string_s.c\n'}
+[0.675510] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_u_time_s.c\n'}
+[0.675742] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/__init__.py\n'}
+[0.675960] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/msg/_u_time.py\n'}
+[0.676170] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.676494] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages/test_msgs/test_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.677155] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/lib/libtest_msgs__python.so\n'}
+[0.677519] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/TestString.idl\n'}
+[0.677900] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/UTime.idl\n'}
+[0.678241] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/TestString.msg\n'}
+[0.678669] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/msg/UTime.msg\n'}
+[0.679052] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/package_run_dependencies/test_msgs\n'}
+[0.679388] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/parent_prefix_path/test_msgs\n'}
+[0.679653] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/ament_prefix_path.sh\n'}
+[0.679963] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/ament_prefix_path.dsv\n'}
+[0.680260] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/path.sh\n'}
+[0.680670] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/environment/path.dsv\n'}
+[0.680972] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.bash\n'}
+[0.681319] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.sh\n'}
+[0.681659] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.zsh\n'}
+[0.682012] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/local_setup.dsv\n'}
+[0.682293] (test_msgs) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.dsv\n'}
+[0.682716] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/ament_index/resource_index/packages/test_msgs\n'}
+[0.683087] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cExport.cmake\n'}
+[0.683500] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.683787] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.684047] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.684301] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.684549] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.684793] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.685036] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.685277] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.685520] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.685759] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.686044] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.686294] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.686544] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.686874] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.687131] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.687374] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.687614] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgsConfig.cmake\n'}
+[0.687852] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake/test_msgsConfig-version.cmake\n'}
+[0.688092] (test_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/package.xml\n'}
+[0.693137] (test_msgs) CommandEnded: {'returncode': 0}
+[0.700698] (-) TimerEvent: {}
+[0.801784] (-) TimerEvent: {}
+[0.844614] (test_msgs) JobEnded: {'identifier': 'test_msgs', 'rc': 0}
+[0.847801] (rclcpp) JobStarted: {'identifier': 'rclcpp'}
+[0.864425] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'cmake'}
+[0.866249] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'build'}
+[0.870937] (rclcpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yfu/projects/ros2-picas/build/rclcpp', '--', '-j6', '-l6'], 'cwd': '/home/yfu/projects/ros2-picas/build/rclcpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/rclcpp'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[0.902052] (-) TimerEvent: {}
+[1.003198] (-) TimerEvent: {}
+[1.104250] (-) TimerEvent: {}
+[1.113880] (rclcpp) StdoutLine: {'line': b'[100%] Built target rclcpp\n'}
+[1.152297] (rclcpp) CommandEnded: {'returncode': 0}
+[1.154418] (rclcpp) JobProgress: {'identifier': 'rclcpp', 'progress': 'install'}
+[1.154949] (rclcpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yfu/projects/ros2-picas/build/rclcpp'], 'cwd': '/home/yfu/projects/ros2-picas/build/rclcpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/rclcpp'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.185180] (rclcpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.185854] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/lib/librclcpp.so\n'}
+[1.186090] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/library_path.sh\n'}
+[1.186313] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/library_path.dsv\n'}
+[1.186502] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/ament_index/resource_index/package_run_dependencies/rclcpp\n'}
+[1.186742] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/ament_index/resource_index/parent_prefix_path/rclcpp\n'}
+[1.186942] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/ament_prefix_path.sh\n'}
+[1.187143] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/ament_prefix_path.dsv\n'}
+[1.187332] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/path.sh\n'}
+[1.187506] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/environment/path.dsv\n'}
+[1.187647] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/local_setup.bash\n'}
+[1.187786] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/local_setup.sh\n'}
+[1.187919] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/local_setup.zsh\n'}
+[1.188080] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/local_setup.dsv\n'}
+[1.188216] (rclcpp) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.dsv\n'}
+[1.188407] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/ament_index/resource_index/packages/rclcpp\n'}
+[1.188573] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/rclcppExport.cmake\n'}
+[1.188743] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/rclcppExport-noconfig.cmake\n'}
+[1.188906] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.189103] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.189271] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.189432] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.189669] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/rclcppConfig.cmake\n'}
+[1.189879] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake/rclcppConfig-version.cmake\n'}
+[1.190083] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/package.xml\n'}
+[1.190332] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include\n'}
+[1.190587] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp\n'}
+[1.190845] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/function_traits.hpp\n'}
+[1.191041] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_impl.hpp\n'}
+[1.191274] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/typesupport_helpers.hpp\n'}
+[1.191523] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/publisher_factory.hpp\n'}
+[1.191775] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/timer.hpp\n'}
+[1.192017] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_map.hpp\n'}
+[1.192300] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental\n'}
+[1.192512] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/subscription_intra_process_base.hpp\n'}
+[1.192745] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/README.md\n'}
+[1.192989] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/intra_process_manager.hpp\n'}
+[1.193222] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/subscription_intra_process.hpp\n'}
+[1.193466] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/buffers\n'}
+[1.193696] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/buffers/intra_process_buffer.hpp\n'}
+[1.193940] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/buffers/ring_buffer_implementation.hpp\n'}
+[1.194176] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/buffers/buffer_implementation_base.hpp\n'}
+[1.194372] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/create_intra_process_buffer.hpp\n'}
+[1.194596] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/experimental/executable_list.hpp\n'}
+[1.194844] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/macros.hpp\n'}
+[1.195085] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/strategies\n'}
+[1.195314] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/strategies/allocator_memory_strategy.hpp\n'}
+[1.195514] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/strategies/message_pool_memory_strategy.hpp\n'}
+[1.195739] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_service_callback.hpp\n'}
+[1.196011] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp\n'}
+[1.196196] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter.hpp\n'}
+[1.196407] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/generic_publisher.hpp\n'}
+[1.196642] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_events_filter.hpp\n'}
+[1.196877] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set.hpp\n'}
+[1.197100] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_service.hpp\n'}
+[1.198004] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/topic_statistics\n'}
+[1.198295] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp\n'}
+[1.198445] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_for_message.hpp\n'}
+[1.198609] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/exceptions\n'}
+[1.198766] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/exceptions/exceptions.hpp\n'}
+[1.198928] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/future_return_code.hpp\n'}
+[1.199076] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/intra_process_buffer_type.hpp\n'}
+[1.199213] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_generic_subscription.hpp\n'}
+[1.199345] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/event.hpp\n'}
+[1.199480] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/qos_overriding_options.hpp\n'}
+[1.199614] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/type_support_decl.hpp\n'}
+[1.199743] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/topic_statistics_state.hpp\n'}
+[1.199871] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp\n'}
+[1.199999] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/publisher.hpp\n'}
+[1.200126] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/exceptions.hpp\n'}
+[1.200276] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_subscription.hpp\n'}
+[1.200405] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp\n'}
+[1.200531] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/visibility_control.hpp\n'}
+[1.200658] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp\n'}
+[1.200791] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp\n'}
+[1.200918] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/duration.hpp\n'}
+[1.201047] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_event_handler.hpp\n'}
+[1.201174] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/clock.hpp\n'}
+[1.201304] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/expand_topic_or_service_name.hpp\n'}
+[1.201429] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_value.hpp\n'}
+[1.201551] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription_base.hpp\n'}
+[1.201677] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription_traits.hpp\n'}
+[1.201937] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/cb_sched.hpp\n'}
+[1.202863] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp\n'}
+[1.203598] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/publisher_options.hpp\n'}
+[1.206987] (-) TimerEvent: {}
+[1.208333] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp\n'}
+[1.208709] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rate.hpp\n'}
+[1.209151] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces\n'}
+[1.209753] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_logging_interface.hpp\n'}
+[1.210136] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_time_source.hpp\n'}
+[1.210497] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_services_interface.hpp\n'}
+[1.210754] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_time_source_interface.hpp\n'}
+[1.211141] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_timers_interface.hpp\n'}
+[1.211476] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_parameters.hpp\n'}
+[1.211787] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_services.hpp\n'}
+[1.212147] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_waitables.hpp\n'}
+[1.212523] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_graph.hpp\n'}
+[1.214690] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_parameters_interface.hpp\n'}
+[1.216855] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_topics_interface.hpp\n'}
+[1.217170] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_base.hpp\n'}
+[1.217578] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_clock.hpp\n'}
+[1.218066] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_topics.hpp\n'}
+[1.219090] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_waitables_interface.hpp\n'}
+[1.219442] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_base_interface.hpp\n'}
+[1.219752] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_timers.hpp\n'}
+[1.220469] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_logging.hpp\n'}
+[1.221409] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_graph_interface.hpp\n'}
+[1.221689] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_clock_interface.hpp\n'}
+[1.222832] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/loaned_message.hpp\n'}
+[1.223450] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/serialized_message.hpp\n'}
+[1.223804] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/time.hpp\n'}
+[1.224935] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/parameter_client.hpp\n'}
+[1.225690] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_result_kind.hpp\n'}
+[1.225998] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/guard_condition.hpp\n'}
+[1.226975] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription.hpp\n'}
+[1.227304] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription_wait_set_mask.hpp\n'}
+[1.227581] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/logger.hpp\n'}
+[1.228176] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/utilities.hpp\n'}
+[1.228883] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/publisher_base.hpp\n'}
+[1.229363] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/service.hpp\n'}
+[1.230606] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp\n'}
+[1.232628] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/qos_event.hpp\n'}
+[1.232996] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_options.hpp\n'}
+[1.234045] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/graph_listener.hpp\n'}
+[1.234566] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/network_flow_endpoint.hpp\n'}
+[1.235069] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/message_info.hpp\n'}
+[1.236322] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_generic_publisher.hpp\n'}
+[1.237383] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_template.hpp\n'}
+[1.237734] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/contexts\n'}
+[1.238225] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/contexts/default_context.hpp\n'}
+[1.239245] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_subscription_callback.hpp\n'}
+[1.239610] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies\n'}
+[1.239947] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/thread_safe_synchronization.hpp\n'}
+[1.240670] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/detail\n'}
+[1.241414] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp\n'}
+[1.241777] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp\n'}
+[1.242436] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/detail/storage_policy_common.hpp\n'}
+[1.242929] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/static_storage.hpp\n'}
+[1.243439] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/dynamic_storage.hpp\n'}
+[1.243850] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_set_policies/sequential_synchronization.hpp\n'}
+[1.245338] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp\n'}
+[1.246846] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription_factory.hpp\n'}
+[1.247267] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/generic_subscription.hpp\n'}
+[1.247513] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/qos.hpp\n'}
+[1.247874] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors\n'}
+[1.248201] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp\n'}
+[1.248526] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp\n'}
+[1.248883] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/static_single_threaded_executor.hpp\n'}
+[1.249208] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/static_executor_entities_collector.hpp\n'}
+[1.249570] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail\n'}
+[1.250020] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_payload.hpp\n'}
+[1.250338] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/resolve_enable_topic_statistics.hpp\n'}
+[1.250619] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/README.md\n'}
+[1.250874] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/resolve_use_intra_process.hpp\n'}
+[1.251116] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/subscription_callback_type_helper.hpp\n'}
+[1.251345] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/qos_parameters.hpp\n'}
+[1.252269] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/utilities.hpp\n'}
+[1.252914] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/mutex_two_priorities.hpp\n'}
+[1.253191] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp\n'}
+[1.253364] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp\n'}
+[1.253525] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/detail/resolve_intra_process_buffer_type.hpp\n'}
+[1.253736] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_publisher.hpp\n'}
+[1.253901] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/allocator\n'}
+[1.254059] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/allocator/allocator_deleter.hpp\n'}
+[1.254217] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/allocator/allocator_common.hpp\n'}
+[1.254372] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp\n'}
+[1.254528] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_timer.hpp\n'}
+[1.254724] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/intra_process_setting.hpp\n'}
+[1.254886] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/time_source.hpp\n'}
+[1.255041] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scope_exit.hpp\n'}
+[1.255197] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_client.hpp\n'}
+[1.255372] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/serialization.hpp\n'}
+[1.255540] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/waitable.hpp\n'}
+[1.255701] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/wait_result.hpp\n'}
+[1.255861] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/message_memory_strategy.hpp\n'}
+[1.256022] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/subscription_options.hpp\n'}
+[1.256183] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp\n'}
+[1.256341] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/init_options.hpp\n'}
+[1.256494] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_service.hpp\n'}
+[1.256647] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/context.hpp\n'}
+[1.256823] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include\n'}
+[1.256983] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp\n'}
+[1.257146] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/logging.hpp\n'}
+[1.257307] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces\n'}
+[1.257467] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_timers_interface.hpp\n'}
+[1.257628] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_timers_interface_traits.hpp\n'}
+[1.257784] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_clock_interface.hpp\n'}
+[1.257938] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_services_interface_traits.hpp\n'}
+[1.258096] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_topics_interface.hpp\n'}
+[1.258254] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_waitables_interface_traits.hpp\n'}
+[1.258412] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_logging_interface_traits.hpp\n'}
+[1.258570] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_graph_interface.hpp\n'}
+[1.258760] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_services_interface.hpp\n'}
+[1.258919] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_waitables_interface.hpp\n'}
+[1.259077] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_time_source_interface.hpp\n'}
+[1.259241] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_base_interface_traits.hpp\n'}
+[1.259398] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_clock_interface_traits.hpp\n'}
+[1.259552] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_graph_interface_traits.hpp\n'}
+[1.259706] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_parameters_interface_traits.hpp\n'}
+[1.259859] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_parameters_interface.hpp\n'}
+[1.260054] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_base_interface.hpp\n'}
+[1.260224] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_time_source_interface_traits.hpp\n'}
+[1.260387] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/node_topics_interface_traits.hpp\n'}
+[1.260548] (rclcpp) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_interfaces/get_node_logging_interface.hpp\n'}
+[1.260711] (rclcpp) CommandEnded: {'returncode': 0}
+[1.307129] (-) TimerEvent: {}
+[1.359409] (rclcpp) JobEnded: {'identifier': 'rclcpp', 'rc': 0}
+[1.363718] (trace_picas) JobStarted: {'identifier': 'trace_picas'}
+[1.387053] (trace_picas) JobProgress: {'identifier': 'trace_picas', 'progress': 'cmake'}
+[1.389343] (trace_picas) JobProgress: {'identifier': 'trace_picas', 'progress': 'build'}
+[1.390255] (trace_picas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yfu/projects/ros2-picas/build/trace_picas', '--', '-j6', '-l6'], 'cwd': '/home/yfu/projects/ros2-picas/build/trace_picas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/trace_picas'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.407471] (-) TimerEvent: {}
+[1.508526] (-) TimerEvent: {}
+[1.520256] (trace_picas) StdoutLine: {'line': b'[100%] Built target trace_picas\n'}
+[1.549013] (trace_picas) CommandEnded: {'returncode': 0}
+[1.552152] (trace_picas) JobProgress: {'identifier': 'trace_picas', 'progress': 'install'}
+[1.553123] (trace_picas) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yfu/projects/ros2-picas/build/trace_picas'], 'cwd': '/home/yfu/projects/ros2-picas/build/trace_picas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/trace_picas'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.581399] (trace_picas) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.582195] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/library_path.sh\n'}
+[1.582432] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/library_path.dsv\n'}
+[1.582654] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/include/trace_picas/\n'}
+[1.582865] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/include/trace_picas//trace.hpp\n'}
+[1.583065] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/lib/libtrace_picas.a\n'}
+[1.583255] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/package_run_dependencies/trace_picas\n'}
+[1.583405] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/parent_prefix_path/trace_picas\n'}
+[1.583549] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/ament_prefix_path.sh\n'}
+[1.583693] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/ament_prefix_path.dsv\n'}
+[1.583828] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/path.sh\n'}
+[1.583993] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/path.dsv\n'}
+[1.584127] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.bash\n'}
+[1.584280] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.sh\n'}
+[1.584442] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.zsh\n'}
+[1.584623] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.dsv\n'}
+[1.584784] (trace_picas) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.dsv\n'}
+[1.584967] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/packages/trace_picas\n'}
+[1.585158] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/export_traceExport.cmake\n'}
+[1.585303] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/export_traceExport-noconfig.cmake\n'}
+[1.585443] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.585581] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.585745] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.585876] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.586005] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/trace_picasConfig.cmake\n'}
+[1.586134] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/trace_picasConfig-version.cmake\n'}
+[1.586260] (trace_picas) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.xml\n'}
+[1.590894] (trace_picas) CommandEnded: {'returncode': 0}
+[1.608607] (-) TimerEvent: {}
+[1.709216] (-) TimerEvent: {}
+[1.810476] (trace_picas) JobEnded: {'identifier': 'trace_picas', 'rc': 0}
+[1.815031] (-) TimerEvent: {}
+[1.815387] (picas_example) JobStarted: {'identifier': 'picas_example'}
+[1.826421] (picas_example_mt) JobStarted: {'identifier': 'picas_example_mt'}
+[1.843040] (picas_example) JobProgress: {'identifier': 'picas_example', 'progress': 'cmake'}
+[1.844804] (picas_example) JobProgress: {'identifier': 'picas_example', 'progress': 'build'}
+[1.845360] (picas_example) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yfu/projects/ros2-picas/build/picas_example', '--', '-j6', '-l6'], 'cwd': '/home/yfu/projects/ros2-picas/build/picas_example', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/picas_example'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.856020] (picas_example_mt) JobProgress: {'identifier': 'picas_example_mt', 'progress': 'cmake'}
+[1.857624] (picas_example_mt) JobProgress: {'identifier': 'picas_example_mt', 'progress': 'build'}
+[1.858213] (picas_example_mt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yfu/projects/ros2-picas/build/picas_example_mt', '--', '-j6', '-l6'], 'cwd': '/home/yfu/projects/ros2-picas/build/picas_example_mt', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/picas_example_mt'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.915426] (-) TimerEvent: {}
+[1.954287] (picas_example) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target example\x1b[0m\n'}
+[1.989720] (picas_example) StdoutLine: {'line': b'[ 50%] Built target case_study\n'}
+[1.996157] (picas_example_mt) StdoutLine: {'line': b'[100%] Built target example_mt\n'}
+[2.015675] (-) TimerEvent: {}
+[2.017213] (picas_example) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o\x1b[0m\n'}
+[2.026349] (picas_example_mt) CommandEnded: {'returncode': 0}
+[2.028659] (picas_example_mt) JobProgress: {'identifier': 'picas_example_mt', 'progress': 'install'}
+[2.029187] (picas_example_mt) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yfu/projects/ros2-picas/build/picas_example_mt'], 'cwd': '/home/yfu/projects/ros2-picas/build/picas_example_mt', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/picas_example_mt'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[2.060208] (picas_example_mt) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.061079] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/lib/picas_example_mt/example_mt\n'}
+[2.061407] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/ament_index/resource_index/package_run_dependencies/picas_example_mt\n'}
+[2.061636] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/ament_index/resource_index/parent_prefix_path/picas_example_mt\n'}
+[2.061820] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/environment/ament_prefix_path.sh\n'}
+[2.062022] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/environment/ament_prefix_path.dsv\n'}
+[2.062211] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/environment/path.sh\n'}
+[2.062421] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/environment/path.dsv\n'}
+[2.062567] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/local_setup.bash\n'}
+[2.062753] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/local_setup.sh\n'}
+[2.062893] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/local_setup.zsh\n'}
+[2.063063] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/local_setup.dsv\n'}
+[2.063249] (picas_example_mt) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.dsv\n'}
+[2.063438] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/ament_index/resource_index/packages/picas_example_mt\n'}
+[2.063584] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/cmake/picas_example_mtConfig.cmake\n'}
+[2.063721] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/cmake/picas_example_mtConfig-version.cmake\n'}
+[2.063854] (picas_example_mt) StdoutLine: {'line': b'-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example_mt/share/picas_example_mt/package.xml\n'}
+[2.102137] (picas_example_mt) CommandEnded: {'returncode': 0}
+[2.115800] (-) TimerEvent: {}
+[2.218635] (-) TimerEvent: {}
+[2.220885] (picas_example_mt) JobEnded: {'identifier': 'picas_example_mt', 'rc': 0}
+[2.318906] (-) TimerEvent: {}
+[2.420010] (-) TimerEvent: {}
+[2.521171] (-) TimerEvent: {}
+[2.622310] (-) TimerEvent: {}
+[2.723480] (-) TimerEvent: {}
+[2.824592] (-) TimerEvent: {}
+[2.925732] (-) TimerEvent: {}
+[3.026879] (-) TimerEvent: {}
+[3.128022] (-) TimerEvent: {}
+[3.229243] (-) TimerEvent: {}
+[3.330404] (-) TimerEvent: {}
+[3.431607] (-) TimerEvent: {}
+[3.532753] (-) TimerEvent: {}
+[3.634658] (-) TimerEvent: {}
+[3.735873] (-) TimerEvent: {}
+[3.837040] (-) TimerEvent: {}
+[3.938005] (-) TimerEvent: {}
+[4.038990] (-) TimerEvent: {}
+[4.140144] (-) TimerEvent: {}
+[4.241185] (-) TimerEvent: {}
+[4.342132] (-) TimerEvent: {}
+[4.443205] (-) TimerEvent: {}
+[4.544250] (-) TimerEvent: {}
+[4.645366] (-) TimerEvent: {}
+[4.746463] (-) TimerEvent: {}
+[4.847544] (-) TimerEvent: {}
+[4.948586] (-) TimerEvent: {}
+[5.049662] (-) TimerEvent: {}
+[5.150769] (-) TimerEvent: {}
+[5.251837] (-) TimerEvent: {}
+[5.352819] (-) TimerEvent: {}
+[5.453916] (-) TimerEvent: {}
+[5.555043] (-) TimerEvent: {}
+[5.656152] (-) TimerEvent: {}
+[5.757213] (-) TimerEvent: {}
+[5.858296] (-) TimerEvent: {}
+[5.959403] (-) TimerEvent: {}
+[6.060463] (-) TimerEvent: {}
+[6.161567] (-) TimerEvent: {}
+[6.262682] (-) TimerEvent: {}
+[6.363742] (-) TimerEvent: {}
+[6.464845] (-) TimerEvent: {}
+[6.565956] (-) TimerEvent: {}
+[6.667086] (-) TimerEvent: {}
+[6.768259] (-) TimerEvent: {}
+[6.869372] (-) TimerEvent: {}
+[6.970505] (-) TimerEvent: {}
+[7.071643] (-) TimerEvent: {}
+[7.172755] (-) TimerEvent: {}
+[7.273877] (-) TimerEvent: {}
+[7.374996] (-) TimerEvent: {}
+[7.476122] (-) TimerEvent: {}
+[7.577212] (-) TimerEvent: {}
+[7.678335] (-) TimerEvent: {}
+[7.779496] (-) TimerEvent: {}
+[7.880612] (-) TimerEvent: {}
+[7.981712] (-) TimerEvent: {}
+[8.082814] (-) TimerEvent: {}
+[8.183911] (-) TimerEvent: {}
+[8.285011] (-) TimerEvent: {}
+[8.386152] (-) TimerEvent: {}
+[8.487340] (-) TimerEvent: {}
+[8.588526] (-) TimerEvent: {}
+[8.689766] (-) TimerEvent: {}
+[8.790928] (-) TimerEvent: {}
+[8.892063] (-) TimerEvent: {}
+[8.993194] (-) TimerEvent: {}
+[9.094314] (-) TimerEvent: {}
+[9.195476] (-) TimerEvent: {}
+[9.296583] (-) TimerEvent: {}
+[9.397699] (-) TimerEvent: {}
+[9.498829] (-) TimerEvent: {}
+[9.599937] (-) TimerEvent: {}
+[9.701083] (-) TimerEvent: {}
+[9.802220] (-) TimerEvent: {}
+[9.903386] (-) TimerEvent: {}
+[10.004505] (-) TimerEvent: {}
+[10.105789] (-) TimerEvent: {}
+[10.206916] (-) TimerEvent: {}
+[10.308025] (-) TimerEvent: {}
+[10.409125] (-) TimerEvent: {}
+[10.510249] (-) TimerEvent: {}
+[10.611359] (-) TimerEvent: {}
+[10.712471] (-) TimerEvent: {}
+[10.813592] (-) TimerEvent: {}
+[10.914729] (-) TimerEvent: {}
+[11.015835] (-) TimerEvent: {}
+[11.116957] (-) TimerEvent: {}
+[11.218177] (-) TimerEvent: {}
+[11.319346] (-) TimerEvent: {}
+[11.420427] (-) TimerEvent: {}
+[11.521504] (-) TimerEvent: {}
+[11.622621] (-) TimerEvent: {}
+[11.723717] (-) TimerEvent: {}
+[11.824810] (-) TimerEvent: {}
+[11.964312] (-) TimerEvent: {}
+[12.065465] (-) TimerEvent: {}
+[12.166644] (-) TimerEvent: {}
+[12.267801] (-) TimerEvent: {}
+[12.368940] (-) TimerEvent: {}
+[12.470072] (-) TimerEvent: {}
+[12.571161] (-) TimerEvent: {}
+[12.672239] (-) TimerEvent: {}
+[12.773336] (-) TimerEvent: {}
+[12.874468] (-) TimerEvent: {}
+[12.975601] (-) TimerEvent: {}
+[13.076693] (-) TimerEvent: {}
+[13.177785] (-) TimerEvent: {}
+[13.278905] (-) TimerEvent: {}
+[13.380003] (-) TimerEvent: {}
+[13.481087] (-) TimerEvent: {}
+[13.582186] (-) TimerEvent: {}
+[13.683276] (-) TimerEvent: {}
+[13.784373] (-) TimerEvent: {}
+[13.885493] (-) TimerEvent: {}
+[13.986686] (-) TimerEvent: {}
+[14.088053] (-) TimerEvent: {}
+[14.189186] (-) TimerEvent: {}
+[14.290318] (-) TimerEvent: {}
+[14.391466] (-) TimerEvent: {}
+[14.492656] (-) TimerEvent: {}
+[14.593833] (-) TimerEvent: {}
+[14.694967] (-) TimerEvent: {}
+[14.796057] (-) TimerEvent: {}
+[14.897157] (-) TimerEvent: {}
+[14.998260] (-) TimerEvent: {}
+[15.099381] (-) TimerEvent: {}
+[15.200432] (-) TimerEvent: {}
+[15.301496] (-) TimerEvent: {}
+[15.402599] (-) TimerEvent: {}
+[15.503921] (-) TimerEvent: {}
+[15.605252] (-) TimerEvent: {}
+[15.706313] (-) TimerEvent: {}
+[15.807433] (-) TimerEvent: {}
+[15.908529] (-) TimerEvent: {}
+[16.009629] (-) TimerEvent: {}
+[16.110728] (-) TimerEvent: {}
+[16.211795] (-) TimerEvent: {}
+[16.312858] (-) TimerEvent: {}
+[16.413927] (-) TimerEvent: {}
+[16.515034] (-) TimerEvent: {}
+[16.616071] (-) TimerEvent: {}
+[16.717129] (-) TimerEvent: {}
+[16.818205] (-) TimerEvent: {}
+[16.919285] (-) TimerEvent: {}
+[17.063525] (-) TimerEvent: {}
+[17.164729] (-) TimerEvent: {}
+[17.265793] (-) TimerEvent: {}
+[17.366803] (-) TimerEvent: {}
+[17.467858] (-) TimerEvent: {}
+[17.568996] (-) TimerEvent: {}
+[17.670129] (-) TimerEvent: {}
+[17.771158] (-) TimerEvent: {}
+[17.872318] (-) TimerEvent: {}
+[17.973484] (-) TimerEvent: {}
+[18.074658] (-) TimerEvent: {}
+[18.175804] (-) TimerEvent: {}
+[18.276959] (-) TimerEvent: {}
+[18.377979] (-) TimerEvent: {}
+[18.479110] (-) TimerEvent: {}
+[18.580148] (-) TimerEvent: {}
+[18.681203] (-) TimerEvent: {}
+[18.782267] (-) TimerEvent: {}
+[18.883365] (-) TimerEvent: {}
+[18.984409] (-) TimerEvent: {}
+[19.085436] (-) TimerEvent: {}
+[19.186471] (-) TimerEvent: {}
+[19.287564] (-) TimerEvent: {}
+[19.388578] (-) TimerEvent: {}
+[19.489610] (-) TimerEvent: {}
+[19.590622] (-) TimerEvent: {}
+[19.691658] (-) TimerEvent: {}
+[19.792736] (-) TimerEvent: {}
+[19.893828] (-) TimerEvent: {}
+[19.994924] (-) TimerEvent: {}
+[20.096090] (-) TimerEvent: {}
+[20.197264] (-) TimerEvent: {}
+[20.298466] (-) TimerEvent: {}
+[20.399568] (-) TimerEvent: {}
+[20.500740] (-) TimerEvent: {}
+[20.601887] (-) TimerEvent: {}
+[20.703101] (-) TimerEvent: {}
+[20.804311] (-) TimerEvent: {}
+[20.905518] (-) TimerEvent: {}
+[21.006758] (-) TimerEvent: {}
+[21.107988] (-) TimerEvent: {}
+[21.209182] (-) TimerEvent: {}
+[21.256255] (picas_example) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable example\x1b[0m\n'}
+[21.309431] (-) TimerEvent: {}
+[21.410375] (-) TimerEvent: {}
+[21.511056] (-) TimerEvent: {}
+[21.611910] (-) TimerEvent: {}
+[21.712699] (-) TimerEvent: {}
+[21.813460] (-) TimerEvent: {}
+[21.914177] (-) TimerEvent: {}
+[22.076571] (-) TimerEvent: {}
+[22.177128] (-) TimerEvent: {}
+[22.277872] (-) TimerEvent: {}
+[22.378889] (-) TimerEvent: {}
+[22.479938] (-) TimerEvent: {}
+[22.580785] (-) TimerEvent: {}
+[22.681450] (-) TimerEvent: {}
+[22.782096] (-) TimerEvent: {}
+[22.882733] (-) TimerEvent: {}
+[22.983356] (-) TimerEvent: {}
+[23.083959] (-) TimerEvent: {}
+[23.184621] (-) TimerEvent: {}
+[23.285471] (-) TimerEvent: {}
+[23.386441] (-) TimerEvent: {}
+[23.487604] (-) TimerEvent: {}
+[23.588584] (-) TimerEvent: {}
+[23.689459] (-) TimerEvent: {}
+[23.790306] (-) TimerEvent: {}
+[23.891191] (-) TimerEvent: {}
+[23.992035] (-) TimerEvent: {}
+[24.052994] (picas_example) StdoutLine: {'line': b'[100%] Built target example\n'}
+[24.092226] (-) TimerEvent: {}
+[24.193029] (-) TimerEvent: {}
+[24.201323] (picas_example) CommandEnded: {'returncode': 0}
+[24.203330] (picas_example) JobProgress: {'identifier': 'picas_example', 'progress': 'install'}
+[24.203791] (picas_example) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yfu/projects/ros2-picas/build/picas_example'], 'cwd': '/home/yfu/projects/ros2-picas/build/picas_example', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'yfu'), ('SSH_CLIENT', '172.19.37.143 6742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yfu'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/yfu/projects'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '35.4.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Orin Nano Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yfu'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421523024361'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'P3768'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '278'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/home/yfu/.local/bin:/opt/ros/galactic/bin:/home/yfu/Miniconda/ENTER/bin:/home/yfu/Miniconda/ENTER/condabin:$/home/yfu/Miniconda/ENTER/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('AMENT_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/yfu/Miniconda/ENTER/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/yfu/projects/ros2-picas/build/picas_example'), ('CONDA_EXE', '/home/yfu/Miniconda/ENTER/bin/conda'), ('SSH_CONNECTION', '172.19.37.143 6742 192.168.0.226 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/yfu/Miniconda/ENTER'), ('COLCON', '1'), ('JETSON_JETPACK', '5.1.2'), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic')]), 'shell': False}
+[24.233298] (picas_example) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.234146] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example\n'}
+[24.242621] (picas_example) StdoutLine: {'line': b'-- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example" to ""\n'}
+[24.243095] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study\n'}
+[24.251788] (picas_example) StdoutLine: {'line': b'-- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study" to ""\n'}
+[24.252266] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/package_run_dependencies/picas_example\n'}
+[24.252758] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/parent_prefix_path/picas_example\n'}
+[24.253179] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.sh\n'}
+[24.253500] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.dsv\n'}
+[24.253816] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.sh\n'}
+[24.254098] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.dsv\n'}
+[24.254396] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.bash\n'}
+[24.254762] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.sh\n'}
+[24.255076] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.zsh\n'}
+[24.255371] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.dsv\n'}
+[24.255648] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv\n'}
+[24.256141] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/packages/picas_example\n'}
+[24.256516] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig.cmake\n'}
+[24.256771] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig-version.cmake\n'}
+[24.257056] (picas_example) StdoutLine: {'line': b'-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.xml\n'}
+[24.262992] (picas_example) CommandEnded: {'returncode': 0}
+[24.294011] (-) TimerEvent: {}
+[24.395231] (-) TimerEvent: {}
+[24.434793] (picas_example) JobEnded: {'identifier': 'picas_example', 'rc': 0}
+[24.437584] (-) EventReactorShutdown: {}

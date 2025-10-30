@@ -3,6 +3,8 @@
 #include <memory>
 #include <string>
 #include <sys/time.h>
+#include <random>
+#include <cmath>
 
 // For ROS2RTF
 #include <unistd.h>
@@ -14,6 +16,7 @@
 #include "trace_picas/trace.hpp"
 
 #include "rclcpp/rclcpp.hpp"
+#include "rclcpp/scheduler.hpp"
 //#include "std_msgs/msg/string.hpp"
 #include "test_msgs/msg/detail/test_string__struct.hpp"
 
@@ -146,11 +149,29 @@ private:
     }        
 };
 
+int GetPriority() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    std::uniform_int_distribution<> delay_dist(30, 60);
+    int delay = delay_dist(gen);
+    int budget = 100 - delay;
+
+    double normalized = ( (double)delay / 60.0 + (70.0 - budget) / 40.0 ) / 2.0;
+    int priority = 1 + std::round(97 * normalized);
+
+    if (priority < 1) priority = 1;
+    if (priority > 98) priority = 98;
+
+    return priority;
+}
 
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "PID: %ld run in ROS2.", gettid());
+
+    rclcpp::Scheduler scheduler;
 
     // Naive way to calibrate dummy workload for current system
     while (1) {
@@ -178,9 +199,8 @@ int main(int argc, char * argv[])
     auto c1_r_cb_1 = std::make_shared<IntermediateNode>("Regular_callback1", "c1", "", trace_callbacks, 1000, true);
     auto c1_r_cb_2 = std::make_shared<IntermediateNode>("Regular_callback2", "c1", "", trace_callbacks, 1000, true);
     auto c1_r_cb_3 = std::make_shared<IntermediateNode>("Regular_callback3", "c1", "", trace_callbacks, 1000, true);    
-    //auto c1_r_cb_1 = std::make_shared<IntermediateNode>("Regular_callback1", "c1", "c2", trace_callbacks, 1000, true);
-    //auto c1_r_cb_2 = std::make_shared<IntermediateNode>("Regular_callback2", "c2", "c3", trace_callbacks, 1000, true);
-    //auto c1_r_cb_3 = std::make_shared<IntermediateNode>("Regular_callback3", "c3", "c4", trace_callbacks, 1000, true);
+    auto c1_r_cb_4 = std::make_shared<IntermediateNode>("Regular_callback4", "c1", "", trace_callbacks, 1000, true);    
+    auto c1_r_cb_5 = std::make_shared<IntermediateNode>("Regular_callback5", "c1", "", trace_callbacks, 1000, true);    
 
     // Create executors
     rclcpp::executors::SingleThreadedExecutor exec1;
@@ -199,18 +219,24 @@ int main(int argc, char * argv[])
     exec1.add_node(c1_t_cb);
     exec1.add_node(c1_r_cb_1);
     exec1.add_node(c1_r_cb_2);    
-    exec1.add_node(c1_r_cb_3);    
+    exec1.add_node(c1_r_cb_3);  
+    exec1.add_node(c1_r_cb_4);
+    exec1.add_node(c1_r_cb_5);  
 
 #ifdef PICAS
     // Assign callbacks' priority
     exec1.set_callback_priority(c1_t_cb->timer_, 10);
-    exec1.set_callback_priority(c1_r_cb_1->subscription_, 11);
-    exec1.set_callback_priority(c1_r_cb_2->subscription_, 12);
-    exec1.set_callback_priority(c1_r_cb_3->subscription_, 13);
+    exec1.set_callback_priority(c1_r_cb_1->subscription_, scheduler.Process());
+    exec1.set_callback_priority(c1_r_cb_2->subscription_, scheduler.Process());
+    exec1.set_callback_priority(c1_r_cb_3->subscription_, scheduler.Process());
+    exec1.set_callback_priority(c1_r_cb_4->subscription_, scheduler.Process());
+    exec1.set_callback_priority(c1_r_cb_5->subscription_, scheduler.Process());
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback->priority: %d", c1_t_cb->timer_->callback_priority);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback1->priority: %d", c1_r_cb_1->subscription_->callback_priority);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback2->priority: %d", c1_r_cb_2->subscription_->callback_priority);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback3->priority: %d", c1_r_cb_3->subscription_->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback4->priority: %d", c1_r_cb_4->subscription_->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback5->priority: %d", c1_r_cb_5->subscription_->callback_priority);
 
     std::thread spinThread1(&rclcpp::executors::SingleThreadedExecutor::spin_rt, &exec1);
 #else
@@ -223,6 +249,8 @@ int main(int argc, char * argv[])
     exec1.remove_node(c1_r_cb_1);
     exec1.remove_node(c1_r_cb_2);    
     exec1.remove_node(c1_r_cb_3);    
+    exec1.remove_node(c1_r_cb_4);
+    exec1.remove_node(c1_r_cb_5);
 
     rclcpp::shutdown();
     return 0;

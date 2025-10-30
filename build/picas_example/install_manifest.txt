@@ -1,0 +1,17 @@
+/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example
+/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study
+/home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/package_run_dependencies/picas_example
+/home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/parent_prefix_path/picas_example
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.sh
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.dsv
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.sh
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.dsv
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.bash
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.sh
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.zsh
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.dsv
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv
+/home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/packages/picas_example
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig.cmake
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig-version.cmake
+/home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.xml

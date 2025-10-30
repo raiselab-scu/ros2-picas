@@ -1,0 +1,4 @@
+source;share/trace_picas/local_setup.bash
+source;share/trace_picas/local_setup.dsv
+source;share/trace_picas/local_setup.sh
+source;share/trace_picas/local_setup.zsh

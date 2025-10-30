@@ -1,0 +1,17 @@
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:8:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’
+    8 | [01;31m[KScheduler[m[K::Scheduler() {
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:17:5:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’ previously defined here
+   17 |     [01;36m[KScheduler[m[K() {}
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:12:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Krclcpp::Scheduler::~Scheduler()[m[K’
+   12 | [01;31m[KScheduler[m[K::~Scheduler() {
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:18:5:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Scheduler::~Scheduler()[m[K’ previously defined here
+   18 |     [01;36m[K~[m[KScheduler() {}
+      |     [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

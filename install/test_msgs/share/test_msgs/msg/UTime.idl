@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from test_msgs/msg/UTime.msg
+// generated code does not contain a copyright notice
+
+
+module test_msgs {
+  module msg {
+    struct UTime {
+      int32 sec;
+
+      uint32 usec;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_index_cpp: 1.2.0 (/opt/ros/galactic/share/ament_index_cpp/cmake)
+-- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found libstatistics_collector: 1.1.1 (/opt/ros/galactic/share/libstatistics_collector/cmake)
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rosgraph_msgs: 1.0.3 (/opt/ros/galactic/share/rosgraph_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yfu/projects/ros2-picas/build/rclcpp
+[35m[1mScanning dependencies of target rclcpp[0m
+[  1%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o[0m

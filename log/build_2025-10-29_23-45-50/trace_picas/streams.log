@@ -1,0 +1,55 @@
+[0.033s] Invoking command in '/home/yfu/projects/ros2-picas/build/trace_picas': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/trace_picas -- -j6 -l6
+[0.096s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.142s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.295s] -- Found rclcpp: 9.2.0 (/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake)
+[0.359s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[0.365s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.396s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[0.499s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.502s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.535s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.799s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.948s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.949s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.950s] -- Configured cppcheck include dirs: /home/yfu/projects/ros2-picas/ros2-picas-example/trace_picas/include
+[0.950s] -- Configured cppcheck exclude dirs and/or files: 
+[0.951s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.951s] -- Configured cpplint exclude dirs and/or files: 
+[0.952s] -- Added test 'lint_cmake' to check CMake code style
+[0.954s] -- Added test 'uncrustify' to check C / C++ code style
+[0.955s] -- Configured uncrustify additional arguments: 
+[0.955s] -- Added test 'xmllint' to check XML markup files
+[0.964s] -- Configuring done
+[1.016s] -- Generating done
+[1.106s] -- Build files have been written to: /home/yfu/projects/ros2-picas/build/trace_picas
+[1.202s] [100%] Built target trace_picas
+[1.231s] Invoked command in '/home/yfu/projects/ros2-picas/build/trace_picas' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/trace_picas -- -j6 -l6
+[1.238s] Invoking command in '/home/yfu/projects/ros2-picas/build/trace_picas': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/trace_picas
+[1.261s] -- Install configuration: ""
+[1.261s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/library_path.sh
+[1.261s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/library_path.dsv
+[1.262s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/include/trace_picas/
+[1.262s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/include/trace_picas//trace.hpp
+[1.262s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/lib/libtrace_picas.a
+[1.263s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/package_run_dependencies/trace_picas
+[1.263s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/parent_prefix_path/trace_picas
+[1.263s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/ament_prefix_path.sh
+[1.264s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/ament_prefix_path.dsv
+[1.264s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/path.sh
+[1.264s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/environment/path.dsv
+[1.264s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.bash
+[1.265s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.sh
+[1.265s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.zsh
+[1.265s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/local_setup.dsv
+[1.266s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.dsv
+[1.266s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/ament_index/resource_index/packages/trace_picas
+[1.266s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/export_traceExport.cmake
+[1.267s] -- Installing: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/export_traceExport-noconfig.cmake
+[1.267s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.267s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_targets-extras.cmake
+[1.267s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.268s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/ament_cmake_export_libraries-extras.cmake
+[1.268s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/trace_picasConfig.cmake
+[1.268s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake/trace_picasConfig-version.cmake
+[1.269s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/package.xml
+[1.273s] Invoked command in '/home/yfu/projects/ros2-picas/build/trace_picas' returned '0': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/home/yfu/projects/ros2-picas/install/trace_picas:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/trace_picas
