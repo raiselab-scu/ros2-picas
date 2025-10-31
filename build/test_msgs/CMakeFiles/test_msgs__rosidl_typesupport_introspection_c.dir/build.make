@@ -67,6 +67,7 @@ rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_type
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: /opt/ros/galactic/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: rosidl_adapter/test_msgs/msg/TestString.idl
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: rosidl_adapter/test_msgs/msg/UTime.idl
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: rosidl_adapter/test_msgs/msg/TaskData.idl
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h: /opt/ros/galactic/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
@@ -75,11 +76,17 @@ rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_type
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c
 
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c
+
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c
 
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c.o: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c.o: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c
@@ -107,16 +114,31 @@ CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c -o CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.s
 
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o: rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o   -c /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c
+
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c > CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.i
+
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c -o CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.s
+
 # Object files for target test_msgs__rosidl_typesupport_introspection_c
 test_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c.o" \
-"CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.o"
+"CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.o" \
+"CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o"
 
 # External object files for target test_msgs__rosidl_typesupport_introspection_c
 test_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libtest_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c.o
 libtest_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c.o
+libtest_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c.o
 libtest_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libtest_msgs__rosidl_typesupport_introspection_c.so: libtest_msgs__rosidl_generator_c.so
 libtest_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -132,7 +154,7 @@ libtest_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/galactic/lib/librc
 libtest_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/galactic/lib/librosidl_runtime_c.so
 libtest_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/galactic/lib/librcutils.so
 libtest_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libtest_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libtest_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,8 +168,10 @@ CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__rosidl_typesupport_introspection_c.h
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__type_support.c
 CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/u_time__type_support.c
+CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__type_support.c
 	cd /home/yfu/projects/ros2-picas/build/test_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_msgs__rosidl_typesupport_introspection_c.dir/depend
 

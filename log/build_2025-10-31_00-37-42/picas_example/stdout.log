@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target sstest[0m
+[ 66%] Built target case_study
+[ 66%] Built target example
+[ 83%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m

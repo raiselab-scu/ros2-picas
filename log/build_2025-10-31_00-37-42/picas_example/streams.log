@@ -1,0 +1,13 @@
+[0.041s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.151s] [35m[1mScanning dependencies of target sstest[0m
+[0.187s] [ 66%] Built target case_study
+[0.187s] [ 66%] Built target example
+[0.222s] [ 83%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[5.471s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid ExecutorNode::task_callback(test_msgs::msg::TaskData_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.472s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:87:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+[5.472s]    87 |         double network_delay = (now - msg->[01;31m[Kstamp[m[K).seconds() * 1000;
+[5.472s]       |                                            [01;31m[K^~~~~[m[K
+[11.758s] make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+[11.758s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+[11.759s] make: *** [Makefile:141: all] Error 2
+[11.765s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

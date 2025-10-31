@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target example[0m
+[ 25%] [32m[1mLinking CXX executable case_study[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[ 75%] Built target case_study
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+-- Install configuration: ""
+-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example
+-- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example" to ""
+-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study
+-- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study" to ""
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/package_run_dependencies/picas_example
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/parent_prefix_path/picas_example
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.sh
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.dsv
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.bash
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.sh
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.zsh
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.dsv
+-- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/packages/picas_example
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig.cmake
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig-version.cmake
+-- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.xml

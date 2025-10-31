@@ -61,6 +61,10 @@ CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/u_time.hpp
 CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__builder.hpp
 CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__struct.hpp
 CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__traits.hpp
+CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/task_data.hpp
+CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__builder.hpp
+CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__struct.hpp
+CMakeFiles/test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__traits.hpp
 
 
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: /opt/ros/galactic/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -80,6 +84,7 @@ rosidl_generator_cpp/test_msgs/msg/test_string.hpp: /opt/ros/galactic/share/rosi
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: /opt/ros/galactic/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: rosidl_adapter/test_msgs/msg/TestString.idl
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: rosidl_adapter/test_msgs/msg/UTime.idl
+rosidl_generator_cpp/test_msgs/msg/test_string.hpp: rosidl_adapter/test_msgs/msg/TaskData.idl
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/test_msgs/msg/test_string.hpp: /opt/ros/galactic/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
@@ -106,6 +111,18 @@ rosidl_generator_cpp/test_msgs/msg/detail/u_time__struct.hpp: rosidl_generator_c
 rosidl_generator_cpp/test_msgs/msg/detail/u_time__traits.hpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/test_msgs/msg/detail/u_time__traits.hpp
 
+rosidl_generator_cpp/test_msgs/msg/task_data.hpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/test_msgs/msg/task_data.hpp
+
+rosidl_generator_cpp/test_msgs/msg/detail/task_data__builder.hpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/test_msgs/msg/detail/task_data__builder.hpp
+
+rosidl_generator_cpp/test_msgs/msg/detail/task_data__struct.hpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/test_msgs/msg/detail/task_data__struct.hpp
+
+rosidl_generator_cpp/test_msgs/msg/detail/task_data__traits.hpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/test_msgs/msg/detail/task_data__traits.hpp
+
 test_msgs__cpp: CMakeFiles/test_msgs__cpp
 test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/test_string.hpp
 test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/test_string__builder.hpp
@@ -115,6 +132,10 @@ test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/u_time.hpp
 test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__builder.hpp
 test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__struct.hpp
 test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/u_time__traits.hpp
+test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/task_data.hpp
+test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__builder.hpp
+test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__struct.hpp
+test_msgs__cpp: rosidl_generator_cpp/test_msgs/msg/detail/task_data__traits.hpp
 test_msgs__cpp: CMakeFiles/test_msgs__cpp.dir/build.make
 
 .PHONY : test_msgs__cpp

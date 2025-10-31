@@ -1,0 +1,14 @@
+[0.028s] Invoking command in '/home/yfu/projects/ros2-picas/build/rclcpp': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6
+[0.180s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.403s] [  1%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o[0m
+[1.064s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:[m[K In member function ‘[01m[Kint rclcpp::Scheduler::Process()[m[K’:
+[1.064s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:22:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[1.064s]    22 |     RCLCPP_INFO(rclcpp::[01;31m[Kget_logger[m[K("rclcpp"), "cur task slack time: %d", slack_time);
+[1.065s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[1.067s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[1.067s]    22 |     [01;31m[KRCLCPP_INFO[m[K(rclcpp::get_logger("rclcpp"), "cur task slack time: %d", slack_time);
+[1.068s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.373s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+[1.374s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+[1.375s] make: *** [Makefile:141: all] Error 2
+[1.381s] Invoked command in '/home/yfu/projects/ros2-picas/build/rclcpp' returned '2': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6

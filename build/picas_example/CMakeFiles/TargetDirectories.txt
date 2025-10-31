@@ -7,5 +7,6 @@
 /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/test.dir
 /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/case_study.dir
 /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/example.dir
+/home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/sstest.dir
 /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/picas_example_uninstall.dir
 /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles/uninstall.dir

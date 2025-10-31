@@ -599,6 +599,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/case_study.dir/DependInfo.cmake"
   "CMakeFiles/example.dir/DependInfo.cmake"
+  "CMakeFiles/sstest.dir/DependInfo.cmake"
   "CMakeFiles/picas_example_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   )

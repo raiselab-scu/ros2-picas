@@ -1,0 +1,55 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.0 (/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found test_msgs: 1.0.0 (/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake)
+-- Found trace_picas: 0.0.0 (/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake)
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yfu/projects/ros2-picas/build/picas_example
+[35m[1mScanning dependencies of target sstest[0m
+[35m[1mScanning dependencies of target example[0m
+[35m[1mScanning dependencies of target case_study[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/case_study.dir/src/case_study.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid StartNode::timer_callback()[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:62:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstamp[m[K’
+   62 |         message.[01;31m[Kstamp[m[K = this->now();
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid ExecutorNode::task_callback(test_msgs::msg::TaskData_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:87:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+   87 |         double network_delay = (now - msg->[01;31m[Kstamp[m[K).seconds() * 1000;
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kfloat ExecutorNode::execute_task(float, float, int)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:33:[m[K [01;31m[Kerror: [m[K‘[01m[Khalf[m[K’ was not declared in this scope
+  108 |                 return (float)(([01;31m[Khalf[m[K)a * (half)b);
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ka[m[K’
+  108 |                 return (float)[34m[K([m[K(half)[01;31m[Ka[m[K * (half)b);
+      |                               [34m[K~[m[K      [01;31m[K^[m[K
+      |                                      [32m[K)[m[K
+make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 66%] [32m[1mLinking CXX executable example[0m
+[ 66%] Built target example
+[ 83%] [32m[1mLinking CXX executable case_study[0m
+[ 83%] Built target case_study
+make: *** [Makefile:141: all] Error 2

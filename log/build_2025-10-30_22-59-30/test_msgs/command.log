@@ -1,0 +1,4 @@
+Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/test_msgs -- -j6 -l6
+Invoking command in '/home/yfu/projects/ros2-picas/build/test_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs
+Invoked command in '/home/yfu/projects/ros2-picas/build/test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/test_msgs

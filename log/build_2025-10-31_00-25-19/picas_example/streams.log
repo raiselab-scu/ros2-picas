@@ -1,0 +1,158 @@
+[0.037s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.101s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.150s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.305s] -- Found rclcpp: 9.2.0 (/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake)
+[0.370s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[0.375s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.406s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[0.509s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.511s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.545s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.802s] -- Found test_msgs: 1.0.0 (/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake)
+[0.833s] -- Found trace_picas: 0.0.0 (/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake)
+[0.854s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.018s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.020s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.020s] -- Configured cppcheck include dirs: 
+[1.020s] -- Configured cppcheck exclude dirs and/or files: 
+[1.021s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.021s] -- Configured cpplint exclude dirs and/or files: 
+[1.022s] -- Added test 'lint_cmake' to check CMake code style
+[1.023s] -- Added test 'uncrustify' to check C / C++ code style
+[1.024s] -- Configured uncrustify additional arguments: 
+[1.024s] -- Added test 'xmllint' to check XML markup files
+[1.048s] -- Configuring done
+[1.099s] -- Generating done
+[1.123s] -- Build files have been written to: /home/yfu/projects/ros2-picas/build/picas_example
+[1.189s] [35m[1mScanning dependencies of target sstest[0m
+[1.191s] [35m[1mScanning dependencies of target example[0m
+[1.194s] [35m[1mScanning dependencies of target case_study[0m
+[1.287s] [ 16%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[1.369s] [ 33%] [32mBuilding CXX object CMakeFiles/case_study.dir/src/case_study.cpp.o[0m
+[1.375s] [ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[6.832s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:39:39:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ is not a member of ‘[01m[Ktest_msgs::msg[m[K’
+[6.833s]    39 |     rclcpp::Publisher<test_msgs::msg::[01;31m[KTaskData[m[K>::SharedPtr publisher_;
+[6.833s]       |                                       [01;31m[K^~~~~~~~[m[K
+[6.833s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:39:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.833s]    39 |     rclcpp::Publisher<test_msgs::msg::TaskData[01;31m[K>[m[K::SharedPtr publisher_;
+[6.833s]       |                                               [01;31m[K^[m[K
+[6.833s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:39:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.834s]    39 |     rclcpp::Publisher<test_msgs::msg::TaskData>::[01;31m[KSharedPtr[m[K publisher_;
+[6.834s]       |                                                  [01;31m[K^~~~~~~~~[m[K
+[6.834s]       |                                                           [32m[K;[m[K
+[6.839s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:39:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[6.839s]    39 |     rclcpp::Publisher<test_msgs::msg::TaskData>::SharedPtr [01;31m[Kpublisher_[m[K;
+[6.839s]       |                                                            [01;31m[K^~~~~~~~~~[m[K
+[6.839s]       |                                                            [32m[Krcl_publisher_t[m[K
+[6.851s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In constructor ‘[01m[KStartNode::StartNode(const string&)[m[K’:
+[6.852s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:41:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[6.852s]    41 |         [01;31m[Kpublisher_[m[K = this->create_publisher<test_msgs::msg::TaskData>("task_topic", 10);
+[6.852s]       |         [01;31m[K^~~~~~~~~~[m[K
+[6.852s]       |         [32m[Krcl_publisher_t[m[K
+[6.855s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:41:61:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ is not a member of ‘[01m[Ktest_msgs::msg[m[K’
+[6.855s]    41 |         publisher_ = this->create_publisher<test_msgs::msg::[01;31m[KTaskData[m[K>("task_topic", 10);
+[6.855s]       |                                                             [01;31m[K^~~~~~~~[m[K
+[6.855s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:41:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStartNode::create_publisher<<expression error> >(const char [11], int)[m[K’
+[6.855s]    41 |         publisher_ = this->create_publisher<test_msgs::msg::TaskData>("task_topic", 10[01;31m[K)[m[K;
+[6.856s]       |                                                                                       [01;31m[K^[m[K
+[6.856s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.856s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+[6.856s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[6.856s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:18[m[K:
+[6.856s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[6.856s]   200 |   [01;36m[Kcreate_publisher[m[K(
+[6.857s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[6.857s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.857s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:41:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.857s]    41 |         publisher_ = this->create_publisher<test_msgs::msg::TaskData>("task_topic", 10[01;31m[K)[m[K;
+[6.857s]       |                                                                                       [01;31m[K^[m[K
+[6.894s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid StartNode::timer_callback()[m[K’:
+[6.894s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:51:40:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ is not a member of ‘[01m[Ktest_msgs::msg[m[K’
+[6.894s]    51 |         auto message = test_msgs::msg::[01;31m[KTaskData[m[K();
+[6.894s]       |                                        [01;31m[K^~~~~~~~[m[K
+[6.906s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[6.907s]    64 |         [01;31m[Kpublisher_[m[K->publish(message);
+[6.907s]       |         [01;31m[K^~~~~~~~~~[m[K
+[6.907s]       |         [32m[Krcl_publisher_t[m[K
+[6.907s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K At global scope:
+[6.907s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:46:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ in namespace ‘[01m[Ktest_msgs::msg[m[K’ does not name a type
+[6.907s]    85 |     void task_callback(const test_msgs::msg::[01;31m[KTaskData[m[K::SharedPtr msg) {
+[6.908s]       |                                              [01;31m[K^~~~~~~~[m[K
+[6.908s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:66:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[6.908s]    85 |     void task_callback(const test_msgs::msg::TaskData::SharedPtr [01;31m[Kmsg[m[K) {
+[6.908s]       |                                                                  [01;31m[K^~~[m[K
+[6.908s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[6.908s]    85 |     void task_callback[34m[K([m[Kconst test_msgs::msg::TaskData::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K) {
+[6.909s]       |                       [34m[K~[m[K                                         [01;31m[K^[m[K[32m[K~~~[m[K
+[6.909s]       |                                                                 [32m[K)[m[K
+[6.909s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.909s]    85 |     void task_callback(const test_msgs::msg::TaskData::[01;31m[KSharedPtr[m[K msg) {
+[6.909s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[6.909s]       |                                                                 [32m[K;[m[K
+[6.910s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[6.911s]    85 |     void task_callback(const test_msgs::msg::TaskData::SharedPtr [01;31m[Kmsg[m[K) {
+[6.911s]       |                                                                  [01;31m[K^~~[m[K
+[6.922s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:119:54:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ is not a member of ‘[01m[Ktest_msgs::msg[m[K’
+[6.922s]   119 |     std::vector<rclcpp::Subscription<test_msgs::msg::[01;31m[KTaskData[m[K>::SharedPtr> subscriptions_;
+[6.922s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[6.923s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:119:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.923s]   119 |     std::vector<rclcpp::Subscription<test_msgs::msg::TaskData[01;31m[K>[m[K::SharedPtr> subscriptions_;
+[6.923s]       |                                                              [01;31m[K^[m[K
+[6.923s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:119:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[6.923s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:119:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.923s]   119 |     std::vector<rclcpp::Subscription<test_msgs::msg::TaskData>::SharedPtr[01;31m[K>[m[K subscriptions_;
+[6.923s]       |                                                                          [01;31m[K^[m[K
+[6.924s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:119:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[6.925s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In constructor ‘[01m[KExecutorNode::ExecutorNode()[m[K’:
+[6.925s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:74:58:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ in namespace ‘[01m[Ktest_msgs::msg[m[K’ does not name a type
+[6.925s]    74 |             auto callback = [this](const test_msgs::msg::[01;31m[KTaskData[m[K::SharedPtr msg) {
+[6.925s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[6.925s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:76:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[6.925s]    76 |             }[01;31m[K;[m[K
+[6.926s]       |              [01;31m[K^[m[K
+[6.926s]       |              [32m[K)[m[K
+[6.926s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:74:35:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[6.927s]    74 |             auto callback = [this][01;36m[K([m[Kconst test_msgs::msg::TaskData::SharedPtr msg) {
+[6.927s]       |                                   [01;36m[K^[m[K
+[6.927s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In lambda function:
+[6.927s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:76:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[6.928s]    76 |             }[01;31m[K;[m[K
+[6.928s]       |              [01;31m[K^[m[K
+[6.928s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In constructor ‘[01m[KExecutorNode::ExecutorNode()[m[K’:
+[6.928s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:78:66:[m[K [01;31m[Kerror: [m[K‘[01m[KTaskData[m[K’ is not a member of ‘[01m[Ktest_msgs::msg[m[K’
+[6.928s]    78 |             auto sub = this->create_subscription<test_msgs::msg::[01;31m[KTaskData[m[K>(
+[6.928s]       |                                                                  [01;31m[K^~~~~~~~[m[K
+[6.928s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:79:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KExecutorNode::create_subscription<<expression error> >(const char [11], int, ExecutorNode::ExecutorNode()::<lambda(int)>&)[m[K’
+[6.929s]    79 |                 "task_topic", 10, callback[01;31m[K)[m[K;
+[6.929s]       |                                           [01;31m[K^[m[K
+[6.929s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.929s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+[6.929s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[6.929s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:18[m[K:
+[6.929s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[6.930s]   229 |   [01;36m[Kcreate_subscription[m[K(
+[6.930s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.930s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:229:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.930s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:79:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.930s]    79 |                 "task_topic", 10, callback[01;31m[K)[m[K;
+[6.930s]       |                                           [01;31m[K^[m[K
+[6.930s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:80:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((ExecutorNode*)this)->ExecutorNode::subscriptions_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[6.930s]    80 |             subscriptions_.[01;31m[Kpush_back[m[K(sub);
+[6.931s]       |                            [01;31m[K^~~~~~~~~[m[K
+[6.934s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kfloat ExecutorNode::execute_task(float, float, int)[m[K’:
+[6.934s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:33:[m[K [01;31m[Kerror: [m[K‘[01m[Khalf[m[K’ was not declared in this scope
+[6.934s]   108 |                 return (float)(([01;31m[Khalf[m[K)a * (half)b);
+[6.934s]       |                                 [01;31m[K^~~~[m[K
+[6.934s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ka[m[K’
+[6.934s]   108 |                 return (float)[34m[K([m[K(half)[01;31m[Ka[m[K * (half)b);
+[6.935s]       |                               [34m[K~[m[K      [01;31m[K^[m[K
+[6.935s]       |                                      [32m[K)[m[K
+[8.679s] make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+[8.680s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+[8.680s] make[1]: *** Waiting for unfinished jobs....
+[16.787s] [ 66%] [32m[1mLinking CXX executable example[0m
+[19.107s] [ 66%] Built target example
+[22.249s] [ 83%] [32m[1mLinking CXX executable case_study[0m
+[25.415s] [ 83%] Built target case_study
+[25.419s] make: *** [Makefile:141: all] Error 2
+[25.426s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

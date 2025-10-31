@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_msgs__python.dir/rosidl_generator_py/test_msgs/msg/_task_data_s.c.o"
   "CMakeFiles/test_msgs__python.dir/rosidl_generator_py/test_msgs/msg/_test_string_s.c.o"
   "CMakeFiles/test_msgs__python.dir/rosidl_generator_py/test_msgs/msg/_u_time_s.c.o"
   "rosidl_generator_py/test_msgs/libtest_msgs__python.pdb"

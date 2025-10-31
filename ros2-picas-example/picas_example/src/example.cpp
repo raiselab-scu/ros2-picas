@@ -149,23 +149,6 @@ private:
     }        
 };
 
-int GetPriority() {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-
-    std::uniform_int_distribution<> delay_dist(30, 60);
-    int delay = delay_dist(gen);
-    int budget = 100 - delay;
-
-    double normalized = ( (double)delay / 60.0 + (70.0 - budget) / 40.0 ) / 2.0;
-    int priority = 1 + std::round(97 * normalized);
-
-    if (priority < 1) priority = 1;
-    if (priority > 98) priority = 98;
-
-    return priority;
-}
-
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
@@ -195,12 +178,15 @@ int main(int argc, char * argv[])
     trace_callbacks->trace_write("init",std::to_string(ctime.tv_sec*1000+ctime.tv_usec/1000));
 
     // Create callbacks
-    auto c1_t_cb = std::make_shared<StartNode>("Timer_callback", "c1", trace_callbacks, 1000, 10000, false);
-    auto c1_r_cb_1 = std::make_shared<IntermediateNode>("Regular_callback1", "c1", "", trace_callbacks, 1000, true);
-    auto c1_r_cb_2 = std::make_shared<IntermediateNode>("Regular_callback2", "c1", "", trace_callbacks, 1000, true);
-    auto c1_r_cb_3 = std::make_shared<IntermediateNode>("Regular_callback3", "c1", "", trace_callbacks, 1000, true);    
-    auto c1_r_cb_4 = std::make_shared<IntermediateNode>("Regular_callback4", "c1", "", trace_callbacks, 1000, true);    
-    auto c1_r_cb_5 = std::make_shared<IntermediateNode>("Regular_callback5", "c1", "", trace_callbacks, 1000, true);    
+    auto c1_t_cb = std::make_shared<StartNode>("Timer_callback1", "c1", trace_callbacks, 1000, 10000, false);
+    auto c2_t_cb = std::make_shared<StartNode>("Timer_callback2", "c2", trace_callbacks, 1000, 10000, false);
+    auto c3_t_cb = std::make_shared<StartNode>("Timer_callback3", "c3", trace_callbacks, 1000, 10000, true);
+    auto c4_t_cb = std::make_shared<StartNode>("Timer_callback4", "c4", trace_callbacks, 1000, 10000, false);
+    // auto c1_r_cb_1 = std::make_shared<IntermediateNode>("Regular_callback1", "c1", "", trace_callbacks, 1000, true);
+    // auto c1_r_cb_2 = std::make_shared<IntermediateNode>("Regular_callback2", "c1", "", trace_callbacks, 1000, true);
+    // auto c1_r_cb_3 = std::make_shared<IntermediateNode>("Regular_callback3", "c1", "", trace_callbacks, 1000, true);    
+    // auto c1_r_cb_4 = std::make_shared<IntermediateNode>("Regular_callback4", "c1", "", trace_callbacks, 1000, true);    
+    // auto c1_r_cb_5 = std::make_shared<IntermediateNode>("Regular_callback5", "c1", "", trace_callbacks, 1000, true);    
 
     // Create executors
     rclcpp::executors::SingleThreadedExecutor exec1;
@@ -217,26 +203,38 @@ int main(int argc, char * argv[])
 
     // Allocate callbacks to executors
     exec1.add_node(c1_t_cb);
-    exec1.add_node(c1_r_cb_1);
-    exec1.add_node(c1_r_cb_2);    
-    exec1.add_node(c1_r_cb_3);  
-    exec1.add_node(c1_r_cb_4);
-    exec1.add_node(c1_r_cb_5);  
+    exec1.add_node(c2_t_cb);
+    exec1.add_node(c3_t_cb);
+    exec1.add_node(c4_t_cb);
+    // exec1.add_node(c1_r_cb_1);
+    // exec1.add_node(c1_r_cb_2);    
+    // exec1.add_node(c1_r_cb_3);  
+    // exec1.add_node(c1_r_cb_4);
+    // exec1.add_node(c1_r_cb_5);  
 
 #ifdef PICAS
     // Assign callbacks' priority
-    exec1.set_callback_priority(c1_t_cb->timer_, 10);
-    exec1.set_callback_priority(c1_r_cb_1->subscription_, scheduler.Process());
-    exec1.set_callback_priority(c1_r_cb_2->subscription_, scheduler.Process());
-    exec1.set_callback_priority(c1_r_cb_3->subscription_, scheduler.Process());
-    exec1.set_callback_priority(c1_r_cb_4->subscription_, scheduler.Process());
-    exec1.set_callback_priority(c1_r_cb_5->subscription_, scheduler.Process());
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback->priority: %d", c1_t_cb->timer_->callback_priority);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback1->priority: %d", c1_r_cb_1->subscription_->callback_priority);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback2->priority: %d", c1_r_cb_2->subscription_->callback_priority);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback3->priority: %d", c1_r_cb_3->subscription_->callback_priority);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback4->priority: %d", c1_r_cb_4->subscription_->callback_priority);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback5->priority: %d", c1_r_cb_5->subscription_->callback_priority);
+    exec1.set_callback_priority(c1_t_cb->timer_, scheduler.Process());
+    exec1.set_callback_priority(c2_t_cb->timer_, scheduler.Process());
+    exec1.set_callback_priority(c3_t_cb->timer_, scheduler.Process());
+    exec1.set_callback_priority(c4_t_cb->timer_, scheduler.Process());
+
+    // exec1.set_callback_priority(c1_r_cb_1->subscription_, scheduler.Process());
+    // exec1.set_callback_priority(c1_r_cb_2->subscription_, scheduler.Process());
+    // exec1.set_callback_priority(c1_r_cb_3->subscription_, scheduler.Process());
+    // exec1.set_callback_priority(c1_r_cb_4->subscription_, scheduler.Process());
+    // exec1.set_callback_priority(c1_r_cb_5->subscription_, scheduler.Process());
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback1->priority: %d", c1_t_cb->timer_->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback2->priority: %d", c2_t_cb->timer_->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback3->priority: %d", c3_t_cb->timer_->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback4->priority: %d", c4_t_cb->timer_->callback_priority);
+
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback1->priority: %d", c1_r_cb_1->subscription_->callback_priority);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback2->priority: %d", c1_r_cb_2->subscription_->callback_priority);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback3->priority: %d", c1_r_cb_3->subscription_->callback_priority);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback4->priority: %d", c1_r_cb_4->subscription_->callback_priority);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Regular_callback5->priority: %d", c1_r_cb_5->subscription_->callback_priority);
 
     std::thread spinThread1(&rclcpp::executors::SingleThreadedExecutor::spin_rt, &exec1);
 #else
@@ -246,11 +244,14 @@ int main(int argc, char * argv[])
     spinThread1.join();
 
     exec1.remove_node(c1_t_cb);
-    exec1.remove_node(c1_r_cb_1);
-    exec1.remove_node(c1_r_cb_2);    
-    exec1.remove_node(c1_r_cb_3);    
-    exec1.remove_node(c1_r_cb_4);
-    exec1.remove_node(c1_r_cb_5);
+    exec1.remove_node(c2_t_cb);
+    exec1.remove_node(c3_t_cb);
+    exec1.remove_node(c4_t_cb);
+    // exec1.remove_node(c1_r_cb_1);
+    // exec1.remove_node(c1_r_cb_2);    
+    // exec1.remove_node(c1_r_cb_3);    
+    // exec1.remove_node(c1_r_cb_4);
+    // exec1.remove_node(c1_r_cb_5);
 
     rclcpp::shutdown();
     return 0;

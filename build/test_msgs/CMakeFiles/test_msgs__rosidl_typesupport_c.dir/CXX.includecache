@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/task_data__type_support.cpp
+cstddef
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/rosidl_runtime_c/message_type_support_struct.h
+test_msgs/msg/rosidl_typesupport_c__visibility_control.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/test_msgs/msg/rosidl_typesupport_c__visibility_control.h
+test_msgs/msg/detail/task_data__struct.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/test_msgs/msg/detail/task_data__struct.h
+rosidl_typesupport_c/visibility_control.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/rosidl_typesupport_c/visibility_control.h
+test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h
+
 /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/test_string__type_support.cpp
 cstddef
 /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_typesupport_c/test_msgs/msg/cstddef
@@ -60,6 +74,14 @@ rosidl_runtime_c/primitives_sequence.h
 
 /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
 
+rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 rosidl_generator_c/test_msgs/msg/detail/test_string__struct.h
 stdbool.h
 -
@@ -81,6 +103,14 @@ stdint.h
 -
 
 rosidl_typesupport_c/test_msgs/msg/rosidl_typesupport_c__visibility_control.h
+
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/task_data__rosidl_typesupport_introspection_c.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+test_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
 rosidl_typesupport_introspection_c/test_msgs/msg/detail/test_string__rosidl_typesupport_introspection_c.h
 rosidl_runtime_c/message_type_support_struct.h

@@ -72,6 +72,7 @@ rosidl_generator_c/test_msgs/msg/test_string.h: /opt/ros/galactic/share/rosidl_g
 rosidl_generator_c/test_msgs/msg/test_string.h: /opt/ros/galactic/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/test_msgs/msg/test_string.h: rosidl_adapter/test_msgs/msg/TestString.idl
 rosidl_generator_c/test_msgs/msg/test_string.h: rosidl_adapter/test_msgs/msg/UTime.idl
+rosidl_generator_c/test_msgs/msg/test_string.h: rosidl_adapter/test_msgs/msg/TaskData.idl
 rosidl_generator_c/test_msgs/msg/test_string.h: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/test_msgs/msg/test_string.h: /opt/ros/galactic/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
@@ -98,11 +99,26 @@ rosidl_generator_c/test_msgs/msg/detail/u_time__struct.h: rosidl_generator_c/tes
 rosidl_generator_c/test_msgs/msg/detail/u_time__type_support.h: rosidl_generator_c/test_msgs/msg/test_string.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/u_time__type_support.h
 
+rosidl_generator_c/test_msgs/msg/task_data.h: rosidl_generator_c/test_msgs/msg/test_string.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/task_data.h
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h: rosidl_generator_c/test_msgs/msg/test_string.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h: rosidl_generator_c/test_msgs/msg/test_string.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__type_support.h: rosidl_generator_c/test_msgs/msg/test_string.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/task_data__type_support.h
+
 rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c: rosidl_generator_c/test_msgs/msg/test_string.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c
 
 rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c: rosidl_generator_c/test_msgs/msg/test_string.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c: rosidl_generator_c/test_msgs/msg/test_string.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c
 
 CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o: CMakeFiles/test_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o: rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c
@@ -130,16 +146,31 @@ CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c -o CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.s
 
+CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o: CMakeFiles/test_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o: rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o   -c /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c
+
+CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c > CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.i
+
+CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c -o CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.s
+
 # Object files for target test_msgs__rosidl_generator_c
 test_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o" \
-"CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.o"
+"CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.o" \
+"CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o"
 
 # External object files for target test_msgs__rosidl_generator_c
 test_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libtest_msgs__rosidl_generator_c.so: CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o
 libtest_msgs__rosidl_generator_c.so: CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.o
+libtest_msgs__rosidl_generator_c.so: CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o
 libtest_msgs__rosidl_generator_c.so: CMakeFiles/test_msgs__rosidl_generator_c.dir/build.make
 libtest_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libtest_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -154,7 +185,7 @@ libtest_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librosidl_runtime_c.s
 libtest_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librcpputils.so
 libtest_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librcutils.so
 libtest_msgs__rosidl_generator_c.so: CMakeFiles/test_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libtest_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libtest_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -174,8 +205,13 @@ CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msg
 CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/u_time__functions.h
 CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/u_time__struct.h
 CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/u_time__type_support.h
+CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/task_data.h
+CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h
+CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h
+CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/task_data__type_support.h
 CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c
 CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c
+CMakeFiles/test_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c
 	cd /home/yfu/projects/ros2-picas/build/test_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs /home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs /home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles/test_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_msgs__rosidl_generator_c.dir/depend
 

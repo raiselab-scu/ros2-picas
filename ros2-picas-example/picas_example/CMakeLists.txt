@@ -20,12 +20,15 @@ find_package(rclcpp REQUIRED)
 find_package(test_msgs REQUIRED)
 find_package(trace_picas REQUIRED)
 
+add_executable(sstest src/sstest.cpp)
 add_executable(example src/example.cpp)
 add_executable(case_study src/case_study.cpp)
+ament_target_dependencies(sstest rclcpp test_msgs trace_picas)
 ament_target_dependencies(example rclcpp test_msgs trace_picas)
 ament_target_dependencies(case_study rclcpp test_msgs trace_picas)
 
 install(TARGETS
+  sstest
   example
   case_study
   DESTINATION lib/${PROJECT_NAME})    

@@ -194,6 +194,19 @@ example/fast:
 .PHONY : example/fast
 
 #=============================================================================
+# Target rules for targets named sstest
+
+# Build rule for target.
+sstest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sstest
+.PHONY : sstest
+
+# fast build rule for target.
+sstest/fast:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/build
+.PHONY : sstest/fast
+
+#=============================================================================
 # Target rules for targets named picas_example_uninstall
 
 # Build rule for target.
@@ -273,6 +286,33 @@ src/example.cpp.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/example.cpp.s
 .PHONY : src/example.cpp.s
 
+src/sstest.o: src/sstest.cpp.o
+
+.PHONY : src/sstest.o
+
+# target to build an object file
+src/sstest.cpp.o:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/src/sstest.cpp.o
+.PHONY : src/sstest.cpp.o
+
+src/sstest.i: src/sstest.cpp.i
+
+.PHONY : src/sstest.i
+
+# target to preprocess a source file
+src/sstest.cpp.i:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/src/sstest.cpp.i
+.PHONY : src/sstest.cpp.i
+
+src/sstest.s: src/sstest.cpp.s
+
+.PHONY : src/sstest.s
+
+# target to generate assembly for a file
+src/sstest.cpp.s:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/src/sstest.cpp.s
+.PHONY : src/sstest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,6 +328,7 @@ help:
 	@echo "... test"
 	@echo "... case_study"
 	@echo "... example"
+	@echo "... sstest"
 	@echo "... picas_example_uninstall"
 	@echo "... uninstall"
 	@echo "... src/case_study.o"
@@ -296,6 +337,9 @@ help:
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"
+	@echo "... src/sstest.o"
+	@echo "... src/sstest.i"
+	@echo "... src/sstest.s"
 .PHONY : help
 
 

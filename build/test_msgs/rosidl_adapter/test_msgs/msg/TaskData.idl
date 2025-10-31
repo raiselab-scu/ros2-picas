@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from test_msgs/msg/TaskData.msg
+// generated code does not contain a copyright notice
+
+
+module test_msgs {
+  module msg {
+    struct TaskData {
+      float data1;
+
+      float data2;
+
+      int32 execution_time;
+
+      int32 deadline;
+    };
+  };
+};

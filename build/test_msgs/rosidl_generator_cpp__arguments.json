@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
     "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs:msg/TestString.idl",
-    "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs:msg/UTime.idl"
+    "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs:msg/UTime.idl",
+    "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs:msg/TaskData.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl",
@@ -28,6 +29,7 @@
     "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs/msg/TestString.idl",
     "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs/msg/UTime.idl",
+    "/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_adapter/test_msgs/msg/TaskData.idl",
     "/opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/galactic/share/builtin_interfaces/msg/Time.idl"
   ]

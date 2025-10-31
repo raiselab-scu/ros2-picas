@@ -1,0 +1,20 @@
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid StartNode::timer_callback()[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:62:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstamp[m[K’
+   62 |         message.[01;31m[Kstamp[m[K = this->now();
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid ExecutorNode::task_callback(test_msgs::msg::TaskData_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:87:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct test_msgs::msg::TaskData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+   87 |         double network_delay = (now - msg->[01;31m[Kstamp[m[K).seconds() * 1000;
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kfloat ExecutorNode::execute_task(float, float, int)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:33:[m[K [01;31m[Kerror: [m[K‘[01m[Khalf[m[K’ was not declared in this scope
+  108 |                 return (float)(([01;31m[Khalf[m[K)a * (half)b);
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:108:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ka[m[K’
+  108 |                 return (float)[34m[K([m[K(half)[01;31m[Ka[m[K * (half)b);
+      |                               [34m[K~[m[K      [01;31m[K^[m[K
+      |                                      [32m[K)[m[K
+make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

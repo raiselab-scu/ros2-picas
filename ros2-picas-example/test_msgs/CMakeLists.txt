@@ -17,6 +17,7 @@ find_package(rosidl_default_generators REQUIRED)
 set(msg_files
   "msg/TestString.msg"
   "msg/UTime.msg"
+  "msg/TaskData.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}

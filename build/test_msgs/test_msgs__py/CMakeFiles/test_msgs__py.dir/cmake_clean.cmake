@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_c.c"
   "../rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/test_msgs/msg/__init__.py"
+  "../rosidl_generator_py/test_msgs/msg/_task_data.py"
+  "../rosidl_generator_py/test_msgs/msg/_task_data_s.c"
   "../rosidl_generator_py/test_msgs/msg/_test_string.py"
   "../rosidl_generator_py/test_msgs/msg/_test_string_s.c"
   "../rosidl_generator_py/test_msgs/msg/_u_time.py"

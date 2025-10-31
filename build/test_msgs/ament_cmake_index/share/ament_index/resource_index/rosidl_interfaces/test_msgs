@@ -1,3 +1,5 @@
+msg/TaskData.idl
+msg/TaskData.msg
 msg/TestString.idl
 msg/TestString.msg
 msg/UTime.idl

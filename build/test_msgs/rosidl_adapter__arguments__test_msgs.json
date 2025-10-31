@@ -2,6 +2,7 @@
   "package_name": "test_msgs",
   "non_idl_tuples": [
     "/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs:msg/TestString.msg",
-    "/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs:msg/UTime.msg"
+    "/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs:msg/UTime.msg",
+    "/home/yfu/projects/ros2-picas/ros2-picas-example/test_msgs:msg/TaskData.msg"
   ]
 }

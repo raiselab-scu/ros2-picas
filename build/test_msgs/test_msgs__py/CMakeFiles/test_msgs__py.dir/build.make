@@ -57,9 +57,11 @@ test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/_test_msgs
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_c.c
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_test_string.py
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_u_time.py
+test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_task_data.py
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/__init__.py
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_test_string_s.c
 test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_u_time_s.c
+test_msgs__py/CMakeFiles/test_msgs__py: rosidl_generator_py/test_msgs/msg/_task_data_s.c
 
 
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: /opt/ros/galactic/lib/rosidl_generator_py/rosidl_generator_py
@@ -77,6 +79,7 @@ rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: /opt/ros/galactic/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_adapter/test_msgs/msg/TestString.idl
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_adapter/test_msgs/msg/UTime.idl
+rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_adapter/test_msgs/msg/TaskData.idl
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c: /opt/ros/galactic/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yfu/projects/ros2-picas/build/test_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
@@ -91,6 +94,9 @@ rosidl_generator_py/test_msgs/msg/_test_string.py: rosidl_generator_py/test_msgs
 rosidl_generator_py/test_msgs/msg/_u_time.py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/test_msgs/msg/_u_time.py
 
+rosidl_generator_py/test_msgs/msg/_task_data.py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/test_msgs/msg/_task_data.py
+
 rosidl_generator_py/test_msgs/msg/__init__.py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/test_msgs/msg/__init__.py
 
@@ -100,14 +106,19 @@ rosidl_generator_py/test_msgs/msg/_test_string_s.c: rosidl_generator_py/test_msg
 rosidl_generator_py/test_msgs/msg/_u_time_s.c: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/test_msgs/msg/_u_time_s.c
 
+rosidl_generator_py/test_msgs/msg/_task_data_s.c: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/test_msgs/msg/_task_data_s.c
+
 test_msgs__py: test_msgs__py/CMakeFiles/test_msgs__py
 test_msgs__py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
 test_msgs__py: rosidl_generator_py/test_msgs/_test_msgs_s.ep.rosidl_typesupport_c.c
 test_msgs__py: rosidl_generator_py/test_msgs/msg/_test_string.py
 test_msgs__py: rosidl_generator_py/test_msgs/msg/_u_time.py
+test_msgs__py: rosidl_generator_py/test_msgs/msg/_task_data.py
 test_msgs__py: rosidl_generator_py/test_msgs/msg/__init__.py
 test_msgs__py: rosidl_generator_py/test_msgs/msg/_test_string_s.c
 test_msgs__py: rosidl_generator_py/test_msgs/msg/_u_time_s.c
+test_msgs__py: rosidl_generator_py/test_msgs/msg/_task_data_s.c
 test_msgs__py: test_msgs__py/CMakeFiles/test_msgs__py.dir/build.make
 
 .PHONY : test_msgs__py

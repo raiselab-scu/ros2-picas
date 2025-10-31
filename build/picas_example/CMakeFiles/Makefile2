@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/yfu/projects/ros2-picas/build/picas_example
 # The main recursive "all" target.
 all: CMakeFiles/case_study.dir/all
 all: CMakeFiles/example.dir/all
+all: CMakeFiles/sstest.dir/all
 
 .PHONY : all
 
@@ -66,6 +67,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/case_study.dir/clean
 clean: CMakeFiles/example.dir/clean
+clean: CMakeFiles/sstest.dir/clean
 clean: CMakeFiles/picas_example_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
@@ -124,6 +126,33 @@ example: CMakeFiles/example.dir/rule
 CMakeFiles/example.dir/clean:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/clean
 .PHONY : CMakeFiles/example.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sstest.dir
+
+# All Build rule for target.
+CMakeFiles/sstest.dir/all:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/depend
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles --progress-num=5,6 "Built target sstest"
+.PHONY : CMakeFiles/sstest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sstest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sstest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yfu/projects/ros2-picas/build/picas_example/CMakeFiles 0
+.PHONY : CMakeFiles/sstest.dir/rule
+
+# Convenience name for target.
+sstest: CMakeFiles/sstest.dir/rule
+
+.PHONY : sstest
+
+# clean rule for target.
+CMakeFiles/sstest.dir/clean:
+	$(MAKE) -f CMakeFiles/sstest.dir/build.make CMakeFiles/sstest.dir/clean
+.PHONY : CMakeFiles/sstest.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/picas_example_uninstall.dir

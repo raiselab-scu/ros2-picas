@@ -1,8 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c.o"
   "CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c.o"
   "CMakeFiles/test_msgs__rosidl_generator_c.dir/rosidl_generator_c/test_msgs/msg/detail/u_time__functions.c.o"
   "libtest_msgs__rosidl_generator_c.pdb"
   "libtest_msgs__rosidl_generator_c.so"
+  "rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c"
+  "rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h"
+  "rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h"
+  "rosidl_generator_c/test_msgs/msg/detail/task_data__type_support.h"
   "rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c"
   "rosidl_generator_c/test_msgs/msg/detail/test_string__functions.h"
   "rosidl_generator_c/test_msgs/msg/detail/test_string__struct.h"
@@ -11,6 +16,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/test_msgs/msg/detail/u_time__functions.h"
   "rosidl_generator_c/test_msgs/msg/detail/u_time__struct.h"
   "rosidl_generator_c/test_msgs/msg/detail/u_time__type_support.h"
+  "rosidl_generator_c/test_msgs/msg/task_data.h"
   "rosidl_generator_c/test_msgs/msg/test_string.h"
   "rosidl_generator_c/test_msgs/msg/u_time.h"
 )

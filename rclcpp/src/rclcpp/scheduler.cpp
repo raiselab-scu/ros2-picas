@@ -1,4 +1,5 @@
 #include "rclcpp/scheduler.hpp"
+#include "rclcpp/rclcpp.hpp"
 
 #include <random>
 #include <cmath>
@@ -23,7 +24,7 @@ int Scheduler::Process() {
     int version = GetVersion(slack_time, 55); // 暂时假设任务需要55ms完成
     int priority = GetPriority(slack_time);
 
-    (void)version; // 避免unused variable警告
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current task slack time: %d, version: %d, priority: %d", slack_time, version, priority);
 
     return priority;
 }
@@ -42,10 +43,10 @@ int Scheduler::GetVersion(int slack_time, int expect_complete_time) {
 
 int Scheduler::GetPriority(int slack_time) {
     // 根据Slack Time计算任务优先级
-    // 假设优先级范围为1-98，Slack Time越大，优先级越低
-    int priority = 1 + (98 - 1) * (100 - slack_time) / 100;
+    // 假设优先级范围为1-99，Slack Time越大，优先级越低
+    int priority = 99 - (slack_time * 98 / 100);
     if (priority < 1) priority = 1;
-    if (priority > 98) priority = 98;
+    if (priority > 99) priority = 99;
     return priority;
 }
 

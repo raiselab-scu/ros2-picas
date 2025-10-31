@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/task_data__functions.c
+test_msgs/msg/detail/task_data__functions.h
+/home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/test_msgs/msg/detail/task_data__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
 /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/test_string__functions.c
 test_msgs/msg/detail/test_string__functions.h
 /home/yfu/projects/ros2-picas/build/test_msgs/rosidl_generator_c/test_msgs/msg/detail/test_msgs/msg/detail/test_string__functions.h
@@ -57,6 +69,26 @@ rosidl_runtime_c/visibility_control.h
 /opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/test_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+test_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/test_msgs/msg/detail/test_msgs/msg/rosidl_generator_c__visibility_control.h
+test_msgs/msg/detail/task_data__struct.h
+rosidl_generator_c/test_msgs/msg/detail/test_msgs/msg/detail/task_data__struct.h
+
+rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/test_msgs/msg/detail/test_string__functions.h
 stdbool.h

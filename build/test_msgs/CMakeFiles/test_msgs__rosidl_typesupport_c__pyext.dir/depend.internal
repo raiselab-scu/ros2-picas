@@ -97,6 +97,9 @@ CMakeFiles/test_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/test_m
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
+ rosidl_generator_c/test_msgs/msg/detail/task_data__functions.h
+ rosidl_generator_c/test_msgs/msg/detail/task_data__struct.h
+ rosidl_generator_c/test_msgs/msg/detail/task_data__type_support.h
  rosidl_generator_c/test_msgs/msg/detail/test_string__functions.h
  rosidl_generator_c/test_msgs/msg/detail/test_string__struct.h
  rosidl_generator_c/test_msgs/msg/detail/test_string__type_support.h
