@@ -1,0 +1,26 @@
+[0.041s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.185s] [ 50%] [32m[1mLinking CXX executable case_study[0m
+[0.185s] [ 50%] [32m[1mLinking CXX executable example[0m
+[0.185s] [ 50%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[1.854s] [ 66%] Built target example
+[2.473s] [ 83%] Built target case_study
+[5.537s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In constructor ‘[01m[KStartNode::StartNode(std::string, std::string, int, rclcpp::Scheduler&, rclcpp::executors::SingleThreadedExecutor&)[m[K’:
+[5.538s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:57:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStartNode::create_wall_timer(int&, std::_Bind_helper<false, void (StartNode::*)(), StartNode*>::type)[m[K’
+[5.538s]    57 |             timer_ = this->create_wall_timer(period_, std::bind(&StartNode::timer_callback, this)[01;31m[K)[m[K;
+[5.538s]       |                                                                                                  [01;31m[K^[m[K
+[5.538s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:1329[m[K,
+[5.538s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.539s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+[5.539s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.539s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[5.539s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_impl.hpp:111:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[5.539s]   111 | [01;36m[KNode[m[K::create_wall_timer(
+[5.539s]       | [01;36m[K^~~~[m[K
+[5.539s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_impl.hpp:111:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.539s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:57:98:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+[5.540s]    57 |             timer_ = this->create_wall_timer(period_, std::bind(&StartNode::timer_callback, this)[01;36m[K)[m[K;
+[5.540s]       |                                                                                                  [01;36m[K^[m[K
+[8.158s] make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+[8.159s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+[8.159s] make: *** [Makefile:141: all] Error 2
+[8.165s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/home/yfu/projects/ros2-picas/install/picas_example_mt:/home/yfu/projects/ros2-picas/install/picas_example:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:/home/yfu/projects/ros2-picas/install/trace_picas/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

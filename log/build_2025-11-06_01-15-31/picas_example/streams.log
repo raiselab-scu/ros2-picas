@@ -1,0 +1,32 @@
+[0.043s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.153s] [35m[1mScanning dependencies of target example[0m
+[0.192s] [ 66%] Built target sstest
+[0.192s] [ 66%] Built target case_study
+[0.250s] [ 83%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[14.172s] [100%] [32m[1mLinking CXX executable example[0m
+[16.506s] [100%] Built target example
+[16.662s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '0': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[16.670s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example
+[16.694s] -- Install configuration: ""
+[16.694s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/sstest
+[16.699s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/sstest" to ""
+[16.699s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example
+[16.704s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example" to ""
+[16.705s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study
+[16.718s] -- Set runtime path of "/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study" to ""
+[16.719s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/package_run_dependencies/picas_example
+[16.719s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/parent_prefix_path/picas_example
+[16.719s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.sh
+[16.719s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/ament_prefix_path.dsv
+[16.720s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.sh
+[16.720s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/environment/path.dsv
+[16.720s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.bash
+[16.721s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.sh
+[16.721s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.zsh
+[16.721s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/local_setup.dsv
+[16.721s] -- Installing: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.dsv
+[16.721s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/packages/picas_example
+[16.722s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig.cmake
+[16.722s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/cmake/picas_exampleConfig-version.cmake
+[16.722s] -- Up-to-date: /home/yfu/projects/ros2-picas/install/picas_example/share/picas_example/package.xml
+[16.739s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '0': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yfu/projects/ros2-picas/build/picas_example

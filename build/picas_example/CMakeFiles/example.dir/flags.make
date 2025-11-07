@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -Wno-reorder -DPICAS -std=gnu++17
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION
 
-CXX_INCLUDES = -isystem /home/yfu/projects/ros2-picas/install/trace_picas/include -isystem /home/yfu/projects/ros2-picas/install/test_msgs/include -isystem /home/yfu/projects/ros2-picas/install/rclcpp/include -isystem /opt/ros/galactic/include 
+CXX_INCLUDES = -isystem /home/yfu/projects/ros2-picas/install/trace_picas/include -isystem /home/yfu/projects/ros2-picas/install/rclcpp/include -isystem /home/yfu/projects/ros2-picas/install/test_msgs/include -isystem /opt/ros/galactic/include 
 

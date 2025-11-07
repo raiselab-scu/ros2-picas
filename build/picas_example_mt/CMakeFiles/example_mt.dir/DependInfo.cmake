@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/yfu/projects/ros2-picas/install/trace_picas/include"
-  "/home/yfu/projects/ros2-picas/install/test_msgs/include"
   "/home/yfu/projects/ros2-picas/install/rclcpp/include"
+  "/home/yfu/projects/ros2-picas/install/test_msgs/include"
   "/opt/ros/galactic/include"
   )
 

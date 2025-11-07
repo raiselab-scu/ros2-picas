@@ -1,0 +1,11 @@
+[0.027s] Invoking command in '/home/yfu/projects/ros2-picas/build/rclcpp': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6
+[0.178s] [35m[1mScanning dependencies of target rclcpp[0m
+[0.397s] [  1%] [32mBuilding CXX object CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o[0m
+[0.627s] [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ktest_msgs/msg/task_data.hpp: No such file or directory
+[0.628s]     3 | #include [01;31m[K"test_msgs/msg/task_data.hpp"[m[K
+[0.628s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.628s] compilation terminated.
+[0.770s] make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+[0.771s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+[0.772s] make: *** [Makefile:141: all] Error 2
+[0.779s] Invoked command in '/home/yfu/projects/ros2-picas/build/rclcpp' returned '2': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/rclcpp -- -j6 -l6

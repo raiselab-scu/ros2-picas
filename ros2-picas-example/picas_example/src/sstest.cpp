@@ -38,19 +38,39 @@ class StartNode : public rclcpp::Node
 public:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<test_msgs::msg::TaskData>::SharedPtr publisher_;
-    StartNode(const std::string& name) : Node(name) {
-        publisher_ = this->create_publisher<test_msgs::msg::TaskData>("task_topic", 10);
-        timer_ = this->create_wall_timer(
-            1s, std::bind(&StartNode::timer_callback, this));
-    }
-private:
-    void timer_callback()
-    {
-        std::string name = this->get_name();            
-        RCLCPP_INFO(this->get_logger(), ("callback: " + name).c_str());
 
+    StartNode(const std::string node_name, 
+        const std::string pub_topic, 
+        int period, 
+        rclcpp::Scheduler& scheduler, 
+        rclcpp::executors::SingleThreadedExecutor& exec) 
+        : Node(node_name, rclcpp::NodeOptions().use_intra_process_comms(USE_INTRA_PROCESS_COMMS))
+        , period_(period)
+        , scheduler_(scheduler)
+        , exec_(exec)
+    {
+        publisher_ = this->create_publisher<test_msgs::msg::TaskData>(pub_topic, 1);
+
+        if (period_ == 10000)
+            timer_ = this->create_wall_timer(10000ms, std::bind(&StartNode::timer_callback, this));
+        else
+            timer_ = this->create_wall_timer(3000ms, std::bind(&StartNode::timer_callback, this));
+
+        gettimeofday(&create_timer, NULL);
+        RCLCPP_INFO(this->get_logger(), "Create wall timer at %ld", create_timer.tv_sec*1000+create_timer.tv_usec/1000);
+    }
+
+    rclcpp::TimerBase::SharedPtr get_timer(){ return timer_; }
+    
+private:
+    rclcpp::Scheduler& scheduler_;
+    rclcpp::executors::SingleThreadedExecutor& exec_;
+    int period_;
+    timeval create_timer;
+
+    test_msgs::msg::TaskData generate_data(){
         auto message = test_msgs::msg::TaskData();
-        // generate random raw data and execution time
+
         std::random_device rd;
         std::mt19937 gen(rd());
         std::uniform_real_distribution<float> data_dist(0.0f, 1.0f);
@@ -61,101 +81,61 @@ private:
         message.execution_time = exec_time_dist(gen);
         message.deadline = 100;
 
-        publisher_->publish(message);
+        return message;
+    }
+
+    void timer_callback()
+    {
+        std::string name = this->get_name();            
+        RCLCPP_INFO(this->get_logger(), ("callback: " + name).c_str());
+
+        auto message = generate_data();
+
+        int priority = scheduler_.Process(message.execution_time, message.deadline);
+        exec_.set_callback_priority(timer_, priority);
+
+        if(publisher_) publisher_->publish(message);
     }        
-};
-
-class ExecutorNode : public rclcpp::Node {
-public:
-    ExecutorNode() : Node("executor_node") {
-        scheduler_ = std::make_shared<rclcpp::Scheduler>();
-        
-        for (int i = 1; i <= 4; i++) {
-            auto callback = [this](const test_msgs::msg::TaskData::SharedPtr msg) {
-                this->task_callback(msg);
-            };
-
-            auto sub = this->create_subscription<test_msgs::msg::TaskData>(
-                "task_topic", 10, callback);
-            subscriptions_.push_back(sub);
-        }
-    }
-
-private:
-    void task_callback(const test_msgs::msg::TaskData::SharedPtr msg) {
-        rclcpp::Time now = this->now();
-        // 生成，用scheduler
-        double network_delay = (now - msg->stamp).seconds() * 1000; 
-        
-        scheduler_->SetBudgetTime(msg->deadline);
-        int priority = scheduler_->Process();
-        int version = scheduler_->GetVersion(
-            msg->deadline - network_delay, 
-            msg->execution_time
-        );
-        
-        float result = execute_task(msg->data1, msg->data2, version);
-        
-        RCLCPP_INFO(this->get_logger(), 
-            "Task executed: priority=%d, version=%d, result=%f", 
-            priority, version, result);
-    }
-
-    float execute_task(float a, float b, int version) {
-        switch (version) {
-            case 1:  // FP32
-                return a * b;
-            case 2:  // FP16 - 模拟 FP16 精度
-                {
-                    // 将 float 转换为 int16_t 再转回来模拟 FP16 精度
-                    int16_t a_fp16 = (int16_t)(a * 256);
-                    int16_t b_fp16 = (int16_t)(b * 256);
-                    return ((float)a_fp16 * (float)b_fp16) / (256.0f * 256.0f);
-                }
-            case 3:  // FP8
-                {
-                    // 将 float 转换为 int8_t 再转回来模拟 FP8 精度
-                    int8_t a_fp8 = (int8_t)(a * 127);
-                    int8_t b_fp8 = (int8_t)(b * 127);
-                    return ((float)a_fp8 * (float)b_fp8) / (127.0f * 127.0f);
-                }
-            case 4:  // INT8
-                {
-                    int8_t a_int8 = (int8_t)(a * 127);
-                    int8_t b_int8 = (int8_t)(b * 127);
-                    return ((float)a_int8 * (float)b_int8) / (127.0f * 127.0f);
-                }
-            default:
-                return a * b;
-        }
-    }
-
-    std::shared_ptr<rclcpp::Scheduler> scheduler_;
-    std::vector<rclcpp::Subscription<test_msgs::msg::TaskData>::SharedPtr> subscriptions_;
 };
 
 int main(int argc, char * argv[]) {
     rclcpp::init(argc, argv);
-    
-    // Create start nodes
-    auto client1 = std::make_shared<StartNode>("node1");
-    auto client2 = std::make_shared<StartNode>("node2");
-    auto client3 = std::make_shared<StartNode>("node3");
-    auto client4 = std::make_shared<StartNode>("node4");
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "PID: %ld run in ROS2.", gettid());
 
-    // Create executor node
-    auto executor_node = std::make_shared<ExecutorNode>();
+    rclcpp::executors::SingleThreadedExecutor exec1;
+    rclcpp::Scheduler scheduler;
+    scheduler.SetSingleThreadedExecutor(&exec1);
 
-    // Create executor
-    rclcpp::executors::SingleThreadedExecutor executor;
-    executor.add_node(client1);
-    executor.add_node(client2);
-    executor.add_node(client3);
-    executor.add_node(client4);
-    executor.add_node(executor_node);
-    
-    executor.spin();
-    
+    auto client1 = std::make_shared<StartNode>("Timer_callback1", "c1", 3000, scheduler, exec1);
+    auto client2 = std::make_shared<StartNode>("Timer_callback2", "c2", 3000, scheduler, exec1);
+    auto client3 = std::make_shared<StartNode>("Timer_callback3", "c3", 3000, scheduler, exec1);
+    auto client4 = std::make_shared<StartNode>("Timer_callback4", "c4", 3000, scheduler, exec1);
+
+#ifdef PICAS
+    exec1.enable_callback_priority();
+    exec1.set_executor_priority_cpu(90, 5);
+
+    exec1.add_node(client1);
+    exec1.add_node(client2);
+    exec1.add_node(client3);
+    exec1.add_node(client4);
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback1->priority: %d", client1->get_timer()->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback2->priority: %d", client2->get_timer()->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback3->priority: %d", client3->get_timer()->callback_priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback4->priority: %d", client4->get_timer()->callback_priority);
+
+    std::thread spinThread1(&rclcpp::executors::SingleThreadedExecutor::spin_rt, &exec1);
+#else
+    std::thread spinThread1(&rclcpp::executors::SingleThreadedExecutor::spin, &exec1);
+#endif
+    spinThread1.join();
+
+    exec1.remove_node(client1);
+    exec1.remove_node(client2);
+    exec1.remove_node(client3);
+    exec1.remove_node(client4);
+
     rclcpp::shutdown();
     return 0;
 }

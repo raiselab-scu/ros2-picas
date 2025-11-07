@@ -1,0 +1,18 @@
+[0.043s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.154s] [35m[1mScanning dependencies of target sstest[0m
+[0.156s] [35m[1mScanning dependencies of target example[0m
+[0.189s] [ 50%] Built target case_study
+[0.189s] [ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[0.225s] [ 66%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[0.356s] [ 83%] [32m[1mLinking CXX executable example[0m
+[0.615s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[0.615s] (.text+0x18): undefined reference to `main'
+[0.616s] /usr/bin/ld: (.text+0x1c): undefined reference to `main'
+[0.751s] collect2: error: ld returned 1 exit status
+[0.756s] make[2]: *** [CMakeFiles/example.dir/build.make:211: example] Error 1
+[0.757s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/example.dir/all] Error 2
+[0.757s] make[1]: *** Waiting for unfinished jobs....
+[10.379s] [100%] [32m[1mLinking CXX executable sstest[0m
+[12.590s] [100%] Built target sstest
+[12.596s] make: *** [Makefile:141: all] Error 2
+[12.603s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

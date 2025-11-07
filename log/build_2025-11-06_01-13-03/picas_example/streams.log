@@ -1,0 +1,115 @@
+[0.037s] Invoking command in '/home/yfu/projects/ros2-picas/build/picas_example': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6
+[0.140s] [35m[1mScanning dependencies of target example[0m
+[0.141s] [35m[1mScanning dependencies of target sstest[0m
+[0.181s] [ 33%] Built target case_study
+[0.210s] [ 50%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[0.212s] [ 66%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[5.565s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp:40[m[K,
+[5.566s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+[5.566s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[5.566s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.566s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.566s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[5.567s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp:36[m[K,
+[5.567s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.567s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:21[m[K,
+[5.567s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.567s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[5.567s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.568s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:123:99:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::TimerBase::SharedPtr StartNode::get_timer()[m[K’ is private within this context
+[5.568s]   123 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback1->priority: %d", client1->get_timer([01;31m[K)[m[K->callback_priority);
+[5.568s]       |                                                                                                   [01;31m[K^[m[K
+[5.568s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:34:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.568s]    85 |     rclcpp::TimerBase::SharedPtr [01;36m[Kget_timer[m[K(){ return timer_; }
+[5.568s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[5.568s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp:40[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp:36[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.569s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:21[m[K,
+[5.570s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.570s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[5.570s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:124:99:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::TimerBase::SharedPtr StartNode::get_timer()[m[K’ is private within this context
+[5.570s]   124 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback2->priority: %d", client2->get_timer([01;31m[K)[m[K->callback_priority);
+[5.570s]       |                                                                                                   [01;31m[K^[m[K
+[5.570s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:34:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.570s]    85 |     rclcpp::TimerBase::SharedPtr [01;36m[Kget_timer[m[K(){ return timer_; }
+[5.571s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[5.571s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp:40[m[K,
+[5.571s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+[5.571s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[5.571s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.571s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.571s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[5.572s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp:36[m[K,
+[5.572s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.572s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:21[m[K,
+[5.572s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.572s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[5.572s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:125:99:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::TimerBase::SharedPtr StartNode::get_timer()[m[K’ is private within this context
+[5.572s]   125 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback3->priority: %d", client3->get_timer([01;31m[K)[m[K->callback_priority);
+[5.572s]       |                                                                                                   [01;31m[K^[m[K
+[5.573s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:34:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.573s]    85 |     rclcpp::TimerBase::SharedPtr [01;36m[Kget_timer[m[K(){ return timer_; }
+[5.573s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[5.573s] In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp:40[m[K,
+[5.573s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+[5.573s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+[5.573s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp:36[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:21[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.574s]                  from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[5.574s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:126:99:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::TimerBase::SharedPtr StartNode::get_timer()[m[K’ is private within this context
+[5.575s]   126 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Timer_callback4->priority: %d", client4->get_timer([01;31m[K)[m[K->callback_priority);
+[5.575s]       |                                                                                                   [01;31m[K^[m[K
+[5.575s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:85:34:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.575s]    85 |     rclcpp::TimerBase::SharedPtr [01;36m[Kget_timer[m[K(){ return timer_; }
+[5.575s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[5.785s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.786s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:217:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+[5.786s]   217 |     exec1.set_callback_priority(c1_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+[5.786s]       |                                                                    [01;31m[K^[m[K
+[5.786s] In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[5.787s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+[5.787s]    16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+[5.787s]       |         [01;36m[K^~~~~~~[m[K
+[5.787s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.787s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:218:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+[5.787s]   218 |     exec1.set_callback_priority(c2_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+[5.787s]       |                                                                    [01;31m[K^[m[K
+[5.788s] In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[5.788s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+[5.788s]    16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+[5.788s]       |         [01;36m[K^~~~~~~[m[K
+[5.788s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.788s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:219:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+[5.788s]   219 |     exec1.set_callback_priority(c3_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+[5.789s]       |                                                                    [01;31m[K^[m[K
+[5.789s] In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[5.789s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+[5.789s]    16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+[5.789s]       |         [01;36m[K^~~~~~~[m[K
+[5.789s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.789s] [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:220:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+[5.789s]   220 |     exec1.set_callback_priority(c4_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+[5.790s]       |                                                                    [01;31m[K^[m[K
+[5.790s] In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[5.790s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+[5.790s]    16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+[5.790s]       |         [01;36m[K^~~~~~~[m[K
+[5.790s] [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[8.184s] make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+[8.185s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+[8.185s] make[1]: *** Waiting for unfinished jobs....
+[11.976s] make[2]: *** [CMakeFiles/example.dir/build.make:63: CMakeFiles/example.dir/src/example.cpp.o] Error 1
+[11.977s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/example.dir/all] Error 2
+[11.977s] make: *** [Makefile:141: all] Error 2
+[11.984s] Invoked command in '/home/yfu/projects/ros2-picas/build/picas_example' returned '2': AMENT_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yfu/projects/ros2-picas/install/trace_picas:/home/yfu/projects/ros2-picas/install/rclcpp:/home/yfu/projects/ros2-picas/install/test_msgs:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/yfu/projects/ros2-picas/install/trace_picas/lib:/home/yfu/projects/ros2-picas/install/rclcpp/lib:/home/yfu/projects/ros2-picas/install/test_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yfu/projects/ros2-picas/install/test_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yfu/projects/ros2-picas/build/picas_example -- -j6 -l6

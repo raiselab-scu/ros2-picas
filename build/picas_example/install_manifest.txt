@@ -1,3 +1,4 @@
+/home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/sstest
 /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/example
 /home/yfu/projects/ros2-picas/install/picas_example/lib/picas_example/case_study
 /home/yfu/projects/ros2-picas/install/picas_example/share/ament_index/resource_index/package_run_dependencies/picas_example

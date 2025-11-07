@@ -1,0 +1,110 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.0 (/home/yfu/projects/ros2-picas/install/rclcpp/share/rclcpp/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found test_msgs: 1.0.0 (/home/yfu/projects/ros2-picas/install/test_msgs/share/test_msgs/cmake)
+-- Found trace_picas: 0.0.0 (/home/yfu/projects/ros2-picas/install/trace_picas/share/trace_picas/cmake)
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yfu/projects/ros2-picas/build/picas_example
+[35m[1mScanning dependencies of target sstest[0m
+[35m[1mScanning dependencies of target example[0m
+[35m[1mScanning dependencies of target case_study[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/example.dir/src/example.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/case_study.dir/src/case_study.cpp.o[0m
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:217:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+  217 |     exec1.set_callback_priority(c1_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+   16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+      |         [01;36m[K^~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:218:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+  218 |     exec1.set_callback_priority(c2_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+   16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+      |         [01;36m[K^~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:219:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+  219 |     exec1.set_callback_priority(c3_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+   16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+      |         [01;36m[K^~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:220:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Scheduler::Process()[m[K’
+  220 |     exec1.set_callback_priority(c4_t_cb->timer_, scheduler.Process([01;31m[K)[m[K);
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/example.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint rclcpp::Scheduler::Process(int, int)[m[K’
+   16 |     int [01;36m[KProcess[m[K(int exe_time, int deadline);
+      |         [01;36m[K^~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/scheduler.hpp:16:9:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In constructor ‘[01m[KStartNode::StartNode(std::string, std::string, std::shared_ptr<trace::Trace>, rclcpp::Scheduler&, rclcpp::executors::SingleThreadedExecutor&, int, int, bool)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:48:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStartNode[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+   48 |         , [01;31m[Kcount_[m[K(0)
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:49:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStartNode[m[K’ does not have any field named ‘[01m[Ktrace_callbacks_[m[K’
+   49 |         , [01;31m[Ktrace_callbacks_[m[K(trace_ptr)
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:50:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStartNode[m[K’ does not have any field named ‘[01m[Kexe_time_[m[K’
+   50 |         , [01;31m[Kexe_time_[m[K(exe_time)
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:51:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStartNode[m[K’ does not have any field named ‘[01m[Kperiod_[m[K’
+   51 |         , [01;31m[Kperiod_[m[K(period)
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:52:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStartNode[m[K’ does not have any field named ‘[01m[Kend_flag_[m[K’
+   52 |         , [01;31m[Kend_flag_[m[K(end_flag)
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:58:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kperiod_[m[K’ was not declared in this scope; did you mean ‘[01m[Kperiod[m[K’?
+   58 |         if ([01;31m[Kperiod_[m[K == 10000)
+      |             [01;31m[K^~~~~~~[m[K
+      |             [32m[Kperiod[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:63:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate_timer[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::create_timer[m[K’?
+   63 |         gettimeofday(&[01;31m[Kcreate_timer[m[K, NULL);
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+      |                       [32m[Krclcpp::create_timer[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_subscription.hpp:33[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node_impl.hpp:43[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/node.hpp:1329[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/create_timer.hpp:57:1:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::create_timer[m[K’ declared here
+   57 | [01;36m[Kcreate_timer[m[K(
+      | [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:107:73:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrace_callbacks[m[K’ was not declared in this scope
+  107 |     auto client1 = std::make_shared<StartNode>("Timer_callback1", "c1", [01;31m[Ktrace_callbacks[m[K, 30, 100, false);
+      |                                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/example.dir/build.make:63: CMakeFiles/example.dir/src/example.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/example.dir/all] Error 2
+[ 66%] [32m[1mLinking CXX executable case_study[0m
+[ 66%] Built target case_study
+make: *** [Makefile:141: all] Error 2

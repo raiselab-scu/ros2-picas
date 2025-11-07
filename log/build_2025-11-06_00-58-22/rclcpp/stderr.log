@@ -1,0 +1,60 @@
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:18:44:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::executors[m[K’ has not been declared
+   18 |     void SetSingleThreadedExecutor(rclcpp::[01;31m[Kexecutors[m[K::SingleThreadedExecutor* exec);
+      |                                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:20:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr[m[K’ has not been declared
+   20 |     void RegisterTask([01;31m[Kstd[m[K::shared_ptr<rclcpp::TimerBase> task);
+      |                       [01;31m[K^~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:20:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   20 |     void RegisterTask(std::shared_ptr[01;31m[K<[m[Krclcpp::TimerBase> task);
+      |                                      [01;31m[K^[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:21:33:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::executors[m[K’ has not been declared
+   21 |     void UpdatePriority(rclcpp::[01;31m[Kexecutors[m[K::SingleThreadedExecutor & exec);
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:24:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+   24 |     std::[01;31m[Kvector[m[K<std::shared_ptr<rclcpp::TimerBase>> tasks;
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+  +++ |+[32m[K#include <vector>[m[K
+    1 | #ifndef RCLCPP__SCHEDULER_HPP_
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecutors[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   25 |     rclcpp::[01;31m[Kexecutors[m[K::SingleThreadedExecutor* executor;
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:[m[K In constructor ‘[01m[Krclcpp::Scheduler::Scheduler()[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:10:25:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Krclcpp::Scheduler[m[K’ does not have any field named ‘[01m[Kexecutor[m[K’
+   10 | Scheduler::Scheduler(): [01;31m[Kexecutor[m[K(nullptr) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:[m[K At global scope:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:64:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid rclcpp::Scheduler::RegisterTask(std::shared_ptr<rclcpp::TimerBase>)[m[K’
+   64 | void [01;31m[KScheduler[m[K::RegisterTask(std::shared_ptr<rclcpp::TimerBase> task) {
+      |      [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:20:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid rclcpp::Scheduler::RegisterTask(int)[m[K’
+   20 |     void [01;36m[KRegisterTask[m[K(std::shared_ptr<rclcpp::TimerBase> task);
+      |          [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:6:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rclcpp::Scheduler[m[K’ defined here
+    6 | class [01;36m[KScheduler[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:68:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid rclcpp::Scheduler::UpdatePriority(rclcpp::executors::SingleThreadedExecutor&)[m[K’
+   68 | void [01;31m[KScheduler[m[K::UpdatePriority(rclcpp::executors::SingleThreadedExecutor & exec){
+      |      [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:21:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid rclcpp::Scheduler::UpdatePriority(int&)[m[K’
+   21 |     void [01;36m[KUpdatePriority[m[K(rclcpp::executors::SingleThreadedExecutor & exec);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:6:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rclcpp::Scheduler[m[K’ defined here
+    6 | class [01;36m[KScheduler[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:75:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid rclcpp::Scheduler::SetSingleThreadedExecutor(rclcpp::executors::SingleThreadedExecutor*)[m[K’
+   75 | void [01;31m[KScheduler[m[K::SetSingleThreadedExecutor(rclcpp::executors::SingleThreadedExecutor* exec) {
+      |      [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/yfu/projects/ros2-picas/rclcpp/src/rclcpp/scheduler.cpp:1[m[K:
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:18:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid rclcpp::Scheduler::SetSingleThreadedExecutor(int*)[m[K’
+   18 |     void [01;36m[KSetSingleThreadedExecutor[m[K(rclcpp::executors::SingleThreadedExecutor* exec);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yfu/projects/ros2-picas/rclcpp/include/rclcpp/scheduler.hpp:6:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rclcpp::Scheduler[m[K’ defined here
+    6 | class [01;36m[KScheduler[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rclcpp.dir/build.make:1117: CMakeFiles/rclcpp.dir/src/rclcpp/scheduler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/rclcpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
