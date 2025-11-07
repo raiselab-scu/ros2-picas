@@ -214,9 +214,9 @@ int main(int argc, char * argv[])
 
 #ifdef PICAS
     // Assign callbacks' priority
-    exec1.set_callback_priority(c1_t_cb->timer_, 4);
-    exec1.set_callback_priority(c2_t_cb->timer_, 3);
-    exec1.set_callback_priority(c3_t_cb->timer_, 2);
+    exec1.set_callback_priority(c1_t_cb->timer_, 2);
+    exec1.set_callback_priority(c2_t_cb->timer_, 4);
+    exec1.set_callback_priority(c3_t_cb->timer_, 3);
     exec1.set_callback_priority(c4_t_cb->timer_, 1);
 
     // exec1.set_callback_priority(c1_r_cb_1->subscription_, scheduler.Process());

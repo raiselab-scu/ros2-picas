@@ -14,12 +14,11 @@ Scheduler::~Scheduler() {
 }
 
 int Scheduler::Process(int exe_time, int deadline) {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processing task with exe_time: %d, deadline: %d", exe_time, deadline);
     int slack_time = CalculateSlackTime(exe_time, deadline);
     int priority = GetPriority(slack_time);
     int version = GetVersion(slack_time, exe_time);
 
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current task slack time: %d, version: %d, priority: %d", slack_time, version, priority);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current task slack time: %d, version: %d, priority: %d, info(exe_time: %d, deadline: %d)", slack_time, version, priority, exe_time, deadline);
 
     return priority;
 }

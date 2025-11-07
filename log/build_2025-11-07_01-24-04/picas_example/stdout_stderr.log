@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target sstest[0m
+[ 33%] Built target example
+[ 66%] Built target case_study
+[ 83%] [32mBuilding CXX object CMakeFiles/sstest.dir/src/sstest.cpp.o[0m
+In file included from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/install/rclcpp/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:19[m[K:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:[m[K In member function ‘[01m[Kvoid StartNode::timer_callback()[m[K’:
+[01m[K/home/yfu/projects/ros2-picas/ros2-picas-example/picas_example/src/sstest.cpp:107:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kpriority[m[K’ was not declared in this scope
+  107 |         RCLCPP_INFO(this->get_logger(), ("callback: " + name + " , priority: " + std::to_string([01;31m[Kpriority[m[K)).c_str());
+      |                                                                                                 [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/sstest.dir/build.make:63: CMakeFiles/sstest.dir/src/sstest.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/sstest.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
